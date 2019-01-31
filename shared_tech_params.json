@@ -1,0 +1,15 @@
+{
+    "assets": {
+        "AFi": {
+            "name": "pdfmakemini",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1548102514101x750950975890622100/pdfmake.min.js"
+        },
+        "AFj": {
+            "name": "fontfilesystem",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1548102572877x186463342067709300/vfs_fonts.js"
+        }
+    },
+    "dependencies": {
+        "use_jquery": false
+    }
+}

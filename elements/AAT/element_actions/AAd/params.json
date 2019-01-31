@@ -1,0 +1,48 @@
+{
+    "caption": "Define new style for",
+    "doc": "Creates a standard style to be defined within other elements.",
+    "fields": {
+        "AAe": {
+            "caption": "Style name",
+            "editor": "DynamicValue",
+            "name": "name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAf": {
+            "caption": "Font Size",
+            "editor": "DynamicValue",
+            "name": "fontSize",
+            "rank": 1,
+            "value": "number"
+        },
+        "AAg": {
+            "caption": "Bold",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "bold",
+            "rank": 2
+        },
+        "AAh": {
+            "caption": "Italics",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "italics",
+            "rank": 3
+        },
+        "AAi": {
+            "caption": "Alignment",
+            "editor": "Dropdown",
+            "name": "alignment",
+            "options": "left,right,center,justify",
+            "rank": 4
+        },
+        "ABK": {
+            "caption": "Text Color",
+            "default_val": "rgba(0, 0, 0, 1)",
+            "editor": "Color",
+            "name": "color",
+            "rank": 5
+        }
+    }
+}

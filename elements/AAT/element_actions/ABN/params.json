@@ -1,0 +1,743 @@
+{
+    "caption": "Create table on",
+    "doc": "Creates a table element.",
+    "fields": {
+        "ABO": {
+            "caption": "Body Text Style",
+            "doc": "The text style that will be applied to the table's body.",
+            "editor": "DynamicValue",
+            "name": "tableStyle",
+            "optional": true,
+            "rank": 0,
+            "value": "text"
+        },
+        "ABP": {
+            "caption": "Below you will be able to set extra margins for your table element. Leave the box unchecked for a default display. (Will ignore any margin-related numbers below)",
+            "editor": "Label",
+            "name": "margin_info",
+            "rank": 6
+        },
+        "ABQ": {
+            "caption": "Use table custom margins?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "table_custom_margins",
+            "rank": 5
+        },
+        "ABR": {
+            "caption": "Left Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_left_margin",
+            "rank": 7,
+            "value": "number"
+        },
+        "ABS": {
+            "caption": "Top Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_top_margin",
+            "rank": 8,
+            "value": "number"
+        },
+        "ABT": {
+            "caption": "Right Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_right_margin",
+            "rank": 9,
+            "value": "number"
+        },
+        "ABU": {
+            "caption": "Bottom Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_bottom_margin",
+            "rank": 10,
+            "value": "number"
+        },
+        "ABV": {
+            "caption": "First Column Body",
+            "doc": "A list of whatever here in Bubble. The plugin will try its best to convert it to a text to be displayed into the pdf, some data types (like image) will not work properly. Try using Bubble's \"formatted as text\" expression in case something doesn't works. And always test before pushing into live version!",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "first_column",
+            "rank": 13,
+            "value": "_any_thing"
+        },
+        "ABj": {
+            "caption": "First Column Header",
+            "doc": "If you use header in one column, you must use a header in all the other columns you will use. A header is a text to be shown in the first cell of this column. For example, if you're making an invoice, it can be \"price\", or \"product name\". If you're planning a party, this would be \"Guest Name\" for a list of people's name displayed in this column. Or something else entirely, you do as you wish.",
+            "editor": "DynamicValue",
+            "name": "first_column_header",
+            "optional": true,
+            "rank": 12,
+            "value": "text"
+        },
+        "ABk": {
+            "caption": "Header Text Style",
+            "doc": "The text style that will be applied to the table's header(s).",
+            "editor": "DynamicValue",
+            "name": "header_style",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "ABl": {
+            "caption": "Create header row in this table?",
+            "default_val": false,
+            "doc": "Check this box if you want to use a header (title) on every column of the table. If checked, every used column must have its header box filled, fill with blank spaces if you want an apparently empty cell.",
+            "editor": "Checkbox",
+            "name": "table_uses_header_row",
+            "rank": 2
+        },
+        "ABm": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "doc": "Choose if this element will try to enforce a new page before or after itself.",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 11
+        },
+        "ABn": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "column_separator1",
+            "rank": 14
+        },
+        "ABo": {
+            "caption": "Use second column?",
+            "default_val": false,
+            "doc": "Check this box if you want to use this column. Else, any inputs here will be ignored.",
+            "editor": "Checkbox",
+            "name": "use_second_column",
+            "rank": 15
+        },
+        "ABq": {
+            "caption": "Second Column Header",
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "second_column_header",
+            "optional": true,
+            "rank": 16,
+            "value": "text"
+        },
+        "ABr": {
+            "caption": "Second Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "second_column",
+            "optional": true,
+            "rank": 17,
+            "value": "_any_thing"
+        },
+        "ACG": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 18
+        },
+        "ACI": {
+            "caption": "Use third column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_third_column",
+            "rank": 19
+        },
+        "ACK": {
+            "caption": "Third Column Header",
+            "editor": "DynamicValue",
+            "name": "third_column_header",
+            "optional": true,
+            "rank": 20,
+            "value": "text"
+        },
+        "ACL": {
+            "caption": "Third Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "third_column",
+            "optional": true,
+            "rank": 21,
+            "value": "_any_thing"
+        },
+        "ACN": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 22
+        },
+        "ACO": {
+            "caption": "Use fourth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_fourth_column",
+            "rank": 23
+        },
+        "ACQ": {
+            "caption": "Fourth Column Header",
+            "editor": "DynamicValue",
+            "name": "fourth_column_header",
+            "optional": true,
+            "rank": 24,
+            "value": "text"
+        },
+        "ACR": {
+            "caption": "Fourth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "fourth_column",
+            "optional": true,
+            "rank": 25,
+            "value": "_any_thing"
+        },
+        "ACT": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 26
+        },
+        "ACU": {
+            "caption": "Use fifth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_fifth_column",
+            "rank": 27
+        },
+        "ACW": {
+            "caption": "Fifth Column Header",
+            "editor": "DynamicValue",
+            "name": "fifth_column_header",
+            "optional": true,
+            "rank": 28,
+            "value": "text"
+        },
+        "ACX": {
+            "caption": "Fifth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "fifth_column",
+            "optional": true,
+            "rank": 29,
+            "value": "_any_thing"
+        },
+        "ACZ": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 30
+        },
+        "ACa": {
+            "caption": "Use sixth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_sixth_column",
+            "rank": 31
+        },
+        "ACc": {
+            "caption": "Sixth Column Header",
+            "editor": "DynamicValue",
+            "name": "sixth_column_header",
+            "optional": true,
+            "rank": 32,
+            "value": "text"
+        },
+        "ACd": {
+            "caption": "Sixth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "sixth_column",
+            "optional": true,
+            "rank": 33,
+            "value": "_any_thing"
+        },
+        "ACf": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 34
+        },
+        "ACg": {
+            "caption": "Use seventh column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_seventh_column",
+            "rank": 35
+        },
+        "ACi": {
+            "caption": "Seventh Column Header",
+            "editor": "DynamicValue",
+            "name": "seventh_column_header",
+            "optional": true,
+            "rank": 36,
+            "value": "text"
+        },
+        "ACj": {
+            "caption": "Seventh Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "seventh_column",
+            "optional": true,
+            "rank": 37,
+            "value": "_any_thing"
+        },
+        "ACl": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 38
+        },
+        "ACm": {
+            "caption": "Use eighth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_eighth_column",
+            "rank": 39
+        },
+        "ACo": {
+            "caption": "Eighth Column Header",
+            "editor": "DynamicValue",
+            "name": "eighth_column_header",
+            "optional": true,
+            "rank": 40,
+            "value": "text"
+        },
+        "ACp": {
+            "caption": "Eighth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "eighth_column",
+            "optional": true,
+            "rank": 41,
+            "value": "_any_thing"
+        },
+        "ACr": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 42
+        },
+        "ACs": {
+            "caption": "Use ninth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_ninth_column",
+            "rank": 43
+        },
+        "ACu": {
+            "caption": "Ninth Column Header",
+            "editor": "DynamicValue",
+            "name": "ninth_column_header",
+            "optional": true,
+            "rank": 44,
+            "value": "text"
+        },
+        "ACv": {
+            "caption": "Ninth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "ninth_column",
+            "optional": true,
+            "rank": 45,
+            "value": "_any_thing"
+        },
+        "ACx": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 46
+        },
+        "ACy": {
+            "caption": "Use tenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_tenth_column",
+            "rank": 47
+        },
+        "ADA": {
+            "caption": "Tenth Column Header",
+            "editor": "DynamicValue",
+            "name": "tenth_column_header",
+            "optional": true,
+            "rank": 48,
+            "value": "text"
+        },
+        "ADB": {
+            "caption": "Tenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "tenth_column",
+            "optional": true,
+            "rank": 49,
+            "value": "_any_thing"
+        },
+        "ADD": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 50
+        },
+        "ADE": {
+            "caption": "Use eleventh column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_eleventh_column",
+            "rank": 51
+        },
+        "ADG": {
+            "caption": "Eleventh Column Header",
+            "editor": "DynamicValue",
+            "name": "eleventh_column_header",
+            "optional": true,
+            "rank": 52,
+            "value": "text"
+        },
+        "ADH": {
+            "caption": "Eleventh Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "eleventh_column",
+            "optional": true,
+            "rank": 53,
+            "value": "_any_thing"
+        },
+        "ADJ": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 54
+        },
+        "ADK": {
+            "caption": "Use twelfth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_twelfth_column",
+            "rank": 55
+        },
+        "ADM": {
+            "caption": "Twelfth Column Header",
+            "editor": "DynamicValue",
+            "name": "twelfth_column_header",
+            "optional": true,
+            "rank": 56,
+            "value": "text"
+        },
+        "ADN": {
+            "caption": "Twelfth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "twelfth_column",
+            "optional": true,
+            "rank": 57,
+            "value": "_any_thing"
+        },
+        "ADP": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 58
+        },
+        "ADQ": {
+            "caption": "Use thirteenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_thirteenth_column",
+            "rank": 59
+        },
+        "ADS": {
+            "caption": "Thirteenth Column Header",
+            "editor": "DynamicValue",
+            "name": "thirteenth_column_header",
+            "optional": true,
+            "rank": 60,
+            "value": "text"
+        },
+        "ADT": {
+            "caption": "Thirteenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "thirteenth_column",
+            "optional": true,
+            "rank": 61,
+            "value": "_any_thing"
+        },
+        "ADV": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 62
+        },
+        "ADW": {
+            "caption": "Use fourteenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_fourteenth_column",
+            "rank": 63
+        },
+        "ADY": {
+            "caption": "Fourteenth Column Header",
+            "editor": "DynamicValue",
+            "name": "fourteenth_column_header",
+            "optional": true,
+            "rank": 64,
+            "value": "text"
+        },
+        "ADZ": {
+            "caption": "Fourteenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "fourteenth_column",
+            "optional": true,
+            "rank": 65,
+            "value": "_any_thing"
+        },
+        "ADb": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 66
+        },
+        "ADc": {
+            "caption": "Use fifteenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_fifteenth_column",
+            "rank": 67
+        },
+        "ADe": {
+            "caption": "Fifteenth Column Header",
+            "editor": "DynamicValue",
+            "name": "fifteenth_column_header",
+            "optional": true,
+            "rank": 68,
+            "value": "text"
+        },
+        "ADf": {
+            "caption": "Fifteenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "fifteenth_column",
+            "optional": true,
+            "rank": 69,
+            "value": "_any_thing"
+        },
+        "ADh": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 70
+        },
+        "ADi": {
+            "caption": "Use sixteenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_sixteenth_column",
+            "rank": 71
+        },
+        "ADk": {
+            "caption": "Sixteenth Column Header",
+            "editor": "DynamicValue",
+            "name": "sixteenth_column_header",
+            "optional": true,
+            "rank": 72,
+            "value": "text"
+        },
+        "ADl": {
+            "caption": "Sixteenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "sixteenth_column",
+            "optional": true,
+            "rank": 73,
+            "value": "_any_thing"
+        },
+        "ADn": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 74
+        },
+        "ADo": {
+            "caption": "Use seventeenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_seventeenth_column",
+            "rank": 75
+        },
+        "ADq": {
+            "caption": "Seventeenth Column Header",
+            "editor": "DynamicValue",
+            "name": "seventeenth_column_header",
+            "optional": true,
+            "rank": 76,
+            "value": "text"
+        },
+        "ADr": {
+            "caption": "Seventeenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "seventeenth_column",
+            "optional": true,
+            "rank": 77,
+            "value": "_any_thing"
+        },
+        "ADt": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 78
+        },
+        "ADu": {
+            "caption": "Use eighteenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_eighteenth_column",
+            "rank": 79
+        },
+        "ADw": {
+            "caption": "Eighteenth Column Header",
+            "editor": "DynamicValue",
+            "name": "eighteenth_column_header",
+            "optional": true,
+            "rank": 80,
+            "value": "text"
+        },
+        "ADx": {
+            "caption": "Eighteenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "eighteenth_column",
+            "optional": true,
+            "rank": 81,
+            "value": "_any_thing"
+        },
+        "ADz": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 82
+        },
+        "AEA": {
+            "caption": "Use nineteenth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_nineteenth_column",
+            "rank": 83
+        },
+        "AEC": {
+            "caption": "Nineteenth Column Header",
+            "editor": "DynamicValue",
+            "name": "nineteenth_column_header",
+            "optional": true,
+            "rank": 84,
+            "value": "text"
+        },
+        "AED": {
+            "caption": "Nineteenth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "nineteenth_column",
+            "optional": true,
+            "rank": 85,
+            "value": "_any_thing"
+        },
+        "AEF": {
+            "caption": "----- Another Column ------",
+            "editor": "Label",
+            "name": "-----_another_column_------",
+            "rank": 86
+        },
+        "AEG": {
+            "caption": "Use twentieth column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "use_twentieth_column",
+            "rank": 87
+        },
+        "AEI": {
+            "caption": "Twentieth Column Header",
+            "editor": "DynamicValue",
+            "name": "twentieth_column_header",
+            "optional": true,
+            "rank": 88,
+            "value": "text"
+        },
+        "AEJ": {
+            "caption": "Twentieth Column Body",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "twentieth_column",
+            "optional": true,
+            "rank": 89,
+            "value": "_any_thing"
+        },
+        "AEM": {
+            "caption": "Table Column Width",
+            "default_val": "Fit available space",
+            "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's widths to all horizontal avaliable space in the page.",
+            "editor": "Dropdown",
+            "name": "table_column_width",
+            "options": "Fit available space,Fit content",
+            "rank": 1
+        },
+        "AEO": {
+            "caption": "Table Layout",
+            "default_val": "Standard",
+            "doc": "Choose a style and see if it pleases you!",
+            "editor": "Dropdown",
+            "name": "table_layout",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "rank": 4
+        },
+        "AEg": {
+            "caption": "Is this element being put into a Multi Column?",
+            "default_val": false,
+            "doc": "Mark this box if this element is between the Start and End of a multi column element.",
+            "editor": "Checkbox",
+            "name": "into_multi_column",
+            "rank": 91
+        },
+        "AEh": {
+            "caption": "This Column's Width",
+            "default_val": "Fit available space",
+            "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
+            "editor": "Dropdown",
+            "name": "this_column_width",
+            "optional": true,
+            "options": "Fit available space,Fit content",
+            "rank": 92
+        },
+        "AEi": {
+            "caption": "Multi Column Name",
+            "doc": "The name of the multi column you're wrapping this element within.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "optional": true,
+            "rank": 93,
+            "value": "text"
+        },
+        "AEl": {
+            "caption": "About multi column",
+            "editor": "Label",
+            "name": "about_multi_column",
+            "rank": 90
+        },
+        "AFa": {
+            "caption": "Is this element being put into the footer?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the footer.",
+            "editor": "Checkbox",
+            "name": "into_footer",
+            "rank": 94
+        },
+        "AFb": {
+            "caption": "Is this element being put into the header?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the header.",
+            "editor": "Checkbox",
+            "name": "into_header",
+            "rank": 95
+        }
+    }
+}
