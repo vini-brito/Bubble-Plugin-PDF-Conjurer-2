@@ -738,6 +738,14 @@
             "editor": "Checkbox",
             "name": "into_header",
             "rank": 95
+        },
+        "AFs": {
+            "caption": "Is this element being put into the background?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the background.",
+            "editor": "Checkbox",
+            "name": "into_background",
+            "rank": 96
         }
     }
 }

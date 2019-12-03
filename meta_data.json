@@ -1,0 +1,19 @@
+{
+    "categories": {
+        "0": "visual elements",
+        "1": "input forms",
+        "2": "productivity",
+        "3": "technical",
+        "4": "media",
+        "5": "small business",
+        "6": "ecommerce"
+    },
+    "demo_page": "https://sdfsfsdfsdf.bubbleapps.io/",
+    "description": "A free, powerful, reliable and flexible plugin that allows you to create PDF files to be downloaded, opened or printed by your user's browser and/or save the PDF to your database. It is completely client-side, uses no API, no external services and does not increases your app's costs. Read the forum thread for instructions!",
+    "image": "//s3.amazonaws.com/appforest_uf/f1542513382654x720628094626590600/scroll-unfurled%281a%29.png",
+    "instructions": "Use the plugin actions in a workflow to create the pdf and finish it with a download, print or open pdf action.",
+    "license": "open_source",
+    "link": "https://forum.bubble.is/t/new-plugin-pdf-conjurer/43240",
+    "name": "PDF Conjurer",
+    "plugin_instructions": "See forum thread (link) for instructions."
+}

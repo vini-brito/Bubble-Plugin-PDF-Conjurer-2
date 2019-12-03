@@ -10,6 +10,29 @@
             "name": "file_name",
             "rank": 0,
             "value": "text"
+        },
+        "AFk": {
+            "caption": "Save to database?",
+            "default_val": false,
+            "doc": "If this is enabled, you will be able to use this plugin's custom event called \"PDF uploaded and available in element state\", there you'll be able to save the file's URL to a text field in a thing in Bubble's database. Note that it comes like this: \"//aws.com/23892378/filename\" (without quotes) so you must append the https: or http: for it to work as a link when displaying. But I suggest you to save it in that original state, Bubble apparently uses it as it is for some things. When that event is triggered, the PDF will already be uploaded to your app's storage and the link will be in the PDF Model element custom state called \"Saved PDF's URL\". Note that it will be available in the same \"PDF Model X\" element that was used to create the file.",
+            "editor": "Checkbox",
+            "name": "save_to_database",
+            "rank": 2
+        },
+        "AFo": {
+            "caption": "If you want to save your PDF into your database, use these options below. If not, leave them empty and unchecked.",
+            "editor": "Label",
+            "name": "if_you_want_to_save_your_pdf_into_your_database,_use_these_options_below._if_not,_leave_them_empty_and_unchecked.",
+            "rank": 1
+        },
+        "AFp": {
+            "caption": "Attach PDF to",
+            "doc": "Optional. Required only if you want this file to be private. Else anyone with the link will be able to access it. Check https://bubble.is/reference#Elements.FileInput.attach_to and https://bubble.is/reference#Data.Privacy.permissions.view_attachments to know more.",
+            "editor": "DynamicValue",
+            "name": "attach_pdf_to",
+            "optional": true,
+            "rank": 3,
+            "value": "_any_thing_bindable"
         }
     }
 }
