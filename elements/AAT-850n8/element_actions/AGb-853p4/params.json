@@ -1,0 +1,108 @@
+{
+    "caption": "End repeated table",
+    "fields": {
+        "AGe": {
+            "caption": "Table name",
+            "doc": "Unique table name so you can add columns to it and end it.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AGh": {
+            "caption": "Repeating structure name",
+            "doc": "The repeating structure this table is being repeated into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "rank": 1,
+            "value": "text"
+        },
+        "AGl": {
+            "caption": "Use table custom margins?",
+            "default_val": false,
+            "doc": "If yes, below you will be able to set margins for your table element. Leave this field as \"no\" for a default display, will ignore any margin-related numbers below.",
+            "editor": "DynamicValue",
+            "name": "table_custom_margins",
+            "rank": 2,
+            "value": "boolean"
+        },
+        "AGm": {
+            "caption": "Table left margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_left_margin",
+            "rank": 3,
+            "value": "number"
+        },
+        "AGn": {
+            "caption": "Table top margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_top_margin",
+            "rank": 4,
+            "value": "number"
+        },
+        "AGo": {
+            "caption": "Table right margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_right_margin",
+            "rank": 5,
+            "value": "number"
+        },
+        "AGp": {
+            "caption": "Table bottom margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_bottom_margin",
+            "rank": 6,
+            "value": "number"
+        },
+        "AGq": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "doc": "Choose if this element will try to enforce a new page before or after itself.",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 7,
+            "value": "text"
+        },
+        "AGr": {
+            "caption": "Body text style",
+            "doc": "The name of the text style that will be applied to the table's body text. ",
+            "editor": "DynamicValue",
+            "name": "tableStyle",
+            "optional": true,
+            "rank": 8,
+            "value": "text"
+        },
+        "AGs": {
+            "caption": "Table layout",
+            "default_val": "Standard",
+            "doc": "Choose one and see (: ",
+            "editor": "Dropdown",
+            "name": "table_layout",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "rank": 9
+        },
+        "AGx": {
+            "caption": "Into multi column",
+            "default_val": false,
+            "doc": "\"Yes\" to insert this repeated table into a repeated multi column.",
+            "editor": "DynamicValue",
+            "name": "into_multi_column",
+            "rank": 10,
+            "value": "boolean"
+        },
+        "AGy": {
+            "caption": "Multi column name",
+            "doc": "The name of the multi column that this repeated table is being inserted into. Use this only with a multi column that is also being inserted into a repeating structure.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        }
+    }
+}

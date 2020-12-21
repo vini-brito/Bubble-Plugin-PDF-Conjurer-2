@@ -1,0 +1,24 @@
+{
+    "caption": "Start repeating structure",
+    "fields": {
+        "AGE": {
+            "caption": "Name",
+            "default_val": "",
+            "doc": "Unique name of this repeating structure, so you can write this name in the element to specify where it will be inserted.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "optional": false,
+            "rank": 0,
+            "value": "text"
+        },
+        "AGL": {
+            "caption": "How many structures",
+            "doc": "How many repeated structures you want. For example if you're working with a list of users, use \"List of User's:count\" to run over the list once for each item. Optionally, you can specify a number by typing it or getting it somehow else, like \"5\" and the structure will be repeated 5 times.",
+            "editor": "DynamicValue",
+            "name": "iterations_count",
+            "optional": false,
+            "rank": 1,
+            "value": "number"
+        }
+    }
+}

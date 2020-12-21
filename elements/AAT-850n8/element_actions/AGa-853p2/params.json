@@ -1,0 +1,39 @@
+{
+    "caption": "Start repeated table",
+    "fields": {
+        "AGd": {
+            "caption": "Table name",
+            "doc": "Unique table name so you can add columns to it and end it.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AGf": {
+            "caption": "Repeating structure name",
+            "doc": "The repeating structure this table is being repeated into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "rank": 1,
+            "value": "text"
+        },
+        "AGi": {
+            "caption": "Place headers",
+            "default_val": false,
+            "doc": "If \"yes\", will create a header row. Good for column titles.",
+            "editor": "DynamicValue",
+            "name": "place_headers",
+            "rank": 2,
+            "value": "boolean"
+        },
+        "AGk": {
+            "caption": "Header style",
+            "doc": "The name of the text style you want to be applied to the header's text.",
+            "editor": "DynamicValue",
+            "name": "header_style",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        }
+    }
+}

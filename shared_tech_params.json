@@ -7,9 +7,18 @@
         "AFj": {
             "name": "fontfilesystem",
             "url": "//dd7tel2830j4w.cloudfront.net/f1548102572877x186463342067709300/vfs_fonts.js"
+        },
+        "AGP": {
+            "name": "pdfmakev168",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1606176514198x558433558399571440/pdfmake168.min.js"
+        },
+        "AGQ": {
+            "name": "font168",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1606176535181x843075191964970400/vfs_fonts.min.js"
         }
     },
     "dependencies": {
+        "plugin_api_version": "0",
         "use_jquery": false
     }
 }

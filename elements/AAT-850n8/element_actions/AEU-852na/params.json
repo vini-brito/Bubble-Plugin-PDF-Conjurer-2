@@ -1,0 +1,32 @@
+{
+    "caption": "End multi column",
+    "doc": "Ends multi column",
+    "fields": {
+        "AEY": {
+            "caption": "Multi Column Name",
+            "doc": "This won't be shown in the pdf. Type in the multi column that you want to end here. Note that inserted elements must be between the Start and End actions. ",
+            "editor": "DynamicValue",
+            "name": "multiColumnName",
+            "rank": 0,
+            "value": "text"
+        },
+        "AGv": {
+            "caption": "Being repeated",
+            "default_val": false,
+            "doc": "If this column is being repeated inside a repeating structure, use \"yes\". Must be the same value as it is in the \"Start multi column\" action.",
+            "editor": "DynamicValue",
+            "name": "being_repeated",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AGw": {
+            "caption": "Repeating structure name",
+            "doc": "The name of the repeating structure this multi column is going to be repeated into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        }
+    }
+}

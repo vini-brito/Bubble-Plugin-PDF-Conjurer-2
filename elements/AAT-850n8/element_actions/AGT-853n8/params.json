@@ -1,0 +1,53 @@
+{
+    "caption": "Add column to repeated table",
+    "fields": {
+        "AGX": {
+            "caption": "Thing type",
+            "doc": "The type of thing you want this column to read lists of data from.",
+            "editor": "custom_type",
+            "name": "thing_type",
+            "rank": 0
+        },
+        "AGY": {
+            "caption": "Field of thing",
+            "doc": "A list type field of the thing specified above. Each repeated table will make the list in this field into a table column.",
+            "editor": "custom_field_AGX",
+            "name": "field_of_thing",
+            "rank": 1
+        },
+        "AGZ": {
+            "caption": "Data source",
+            "doc": "List of things to draw data from. For example the first repeated table will read the first thing in this list and then pick the list of text/number/date/etc inside it and use to form the column. In other words, here you must pass a list of lists. Don't worry, experiment and see what happens. Be courageous! 😊",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_source",
+            "rank": 2,
+            "value": "custom_data_AGX"
+        },
+        "AGc": {
+            "caption": "Table name",
+            "doc": "Unique table name so you can add columns to it and end it.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 3,
+            "value": "text"
+        },
+        "AGg": {
+            "caption": "Repeating structure name",
+            "doc": "The repeating structure this table is being repeated into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "rank": 4,
+            "value": "text"
+        },
+        "AGj": {
+            "caption": "Column header",
+            "doc": "The title of this column. Can be empty.",
+            "editor": "DynamicValue",
+            "name": "column_header",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        }
+    }
+}
