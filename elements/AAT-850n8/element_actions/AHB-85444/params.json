@@ -1,0 +1,13 @@
+{
+    "caption": "Start advanced table",
+    "fields": {
+        "AHE": {
+            "caption": "Table name",
+            "doc": "A unique name for this table, you will need to type it again in the other workflow actions related to this table. Just a single word will do, avoid spaces and funny characters.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

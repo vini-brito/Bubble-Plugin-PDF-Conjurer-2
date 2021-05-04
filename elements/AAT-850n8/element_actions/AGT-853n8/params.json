@@ -6,14 +6,14 @@
             "doc": "The type of thing you want this column to read lists of data from.",
             "editor": "custom_type",
             "name": "thing_type",
-            "rank": 0
+            "rank": 1
         },
         "AGY": {
             "caption": "Field of thing",
             "doc": "A list type field of the thing specified above. Each repeated table will make the list in this field into a table column.",
             "editor": "custom_field_AGX",
             "name": "field_of_thing",
-            "rank": 1
+            "rank": 2
         },
         "AGZ": {
             "caption": "Data source",
@@ -21,7 +21,7 @@
             "editor": "DynamicValue",
             "is_list": true,
             "name": "data_source",
-            "rank": 2,
+            "rank": 3,
             "value": "custom_data_AGX"
         },
         "AGc": {
@@ -29,7 +29,7 @@
             "doc": "Unique table name so you can add columns to it and end it.",
             "editor": "DynamicValue",
             "name": "table_name",
-            "rank": 3,
+            "rank": 4,
             "value": "text"
         },
         "AGg": {
@@ -37,7 +37,7 @@
             "doc": "The repeating structure this table is being repeated into.",
             "editor": "DynamicValue",
             "name": "repeating_structure_name",
-            "rank": 4,
+            "rank": 5,
             "value": "text"
         },
         "AGj": {
@@ -46,8 +46,14 @@
             "editor": "DynamicValue",
             "name": "column_header",
             "optional": true,
-            "rank": 5,
+            "rank": 6,
             "value": "text"
+        },
+        "AGz": {
+            "caption": "Attention: This advanced action is only to be used inside a \"Repeated structure\".",
+            "editor": "Label",
+            "name": "attention:_this_advanced_action_is_only_to_be_used_inside_a_\"repeated_structure\".",
+            "rank": 0
         }
     }
 }

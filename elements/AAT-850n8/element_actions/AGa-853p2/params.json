@@ -6,7 +6,7 @@
             "doc": "Unique table name so you can add columns to it and end it.",
             "editor": "DynamicValue",
             "name": "table_name",
-            "rank": 0,
+            "rank": 1,
             "value": "text"
         },
         "AGf": {
@@ -14,7 +14,7 @@
             "doc": "The repeating structure this table is being repeated into.",
             "editor": "DynamicValue",
             "name": "repeating_structure_name",
-            "rank": 1,
+            "rank": 2,
             "value": "text"
         },
         "AGi": {
@@ -23,7 +23,7 @@
             "doc": "If \"yes\", will create a header row. Good for column titles.",
             "editor": "DynamicValue",
             "name": "place_headers",
-            "rank": 2,
+            "rank": 3,
             "value": "boolean"
         },
         "AGk": {
@@ -32,8 +32,14 @@
             "editor": "DynamicValue",
             "name": "header_style",
             "optional": true,
-            "rank": 3,
+            "rank": 4,
             "value": "text"
+        },
+        "AHA": {
+            "caption": "Attention: This advanced action is only to be used inside a \"Repeated structure\".",
+            "editor": "Label",
+            "name": "attention:_this_advanced_action_is_only_to_be_used_inside_a_\"repeated_structure\".",
+            "rank": 0
         }
     }
 }

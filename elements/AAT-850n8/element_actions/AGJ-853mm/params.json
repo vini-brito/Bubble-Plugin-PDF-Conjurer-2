@@ -3,7 +3,7 @@
     "fields": {
         "AGK": {
             "caption": "Name",
-            "doc": "",
+            "doc": "The name of the structure you're finishing.",
             "editor": "DynamicValue",
             "name": "repeating_structure_name",
             "rank": 0,

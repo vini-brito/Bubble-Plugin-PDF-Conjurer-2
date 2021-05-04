@@ -43,6 +43,15 @@
             "editor": "Color",
             "name": "color",
             "rank": 5
+        },
+        "AHq": {
+            "caption": "Font name",
+            "default_val": "Roboto",
+            "doc": "Load a new font through the \"Load font\" action, then write its name as specified in the workflow action here. The default is Roboto and is preloaded, you don't need to do anything to use this font. Only do something if you want another font.",
+            "editor": "DynamicValue",
+            "name": "font_name",
+            "rank": 6,
+            "value": "text"
         }
     }
 }

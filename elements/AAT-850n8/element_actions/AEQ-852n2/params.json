@@ -86,6 +86,7 @@
         "AFH": {
             "caption": "Right Margin",
             "default_val": 0,
+            "doc": "",
             "editor": "DynamicValue",
             "name": "right_margin",
             "rank": 10,

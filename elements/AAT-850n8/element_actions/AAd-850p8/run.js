@@ -21,9 +21,14 @@ function(instance, properties, context) {
 														   fontSize: properties.fontSize,
 														   bold: properties.bold,
 														   italics: properties.italics,
-														   alignment: properties.alignment
+														   alignment: properties.alignment,
+														   font: properties.font_name,
 		
-													 } 
+													 }
+													 
+													 
+
+
 	
 	  
 	

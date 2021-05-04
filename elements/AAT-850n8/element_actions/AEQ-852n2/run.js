@@ -10,10 +10,25 @@ function(instance, properties, context) {
         instance.data.composeInMe = [];
     }
 
+    const protocolFix = (possibleUrl) => {
+
+        if (possibleUrl.substring(0,4) === "http") {
+    
+          return possibleUrl;
+       
+        } else {
+    
+          return `https:${possibleUrl}`;
+    
+        }
+    
+      };
+
     const getList = (thingWithList, startPosition, finishPosition) => {
         let returnedList = thingWithList.get(startPosition, finishPosition);
         return returnedList;
     }
+
 
     const imgCustomMarginsDefinitionLogic = () => {
         if (properties.image_custom_margins === true) {
@@ -27,9 +42,11 @@ function(instance, properties, context) {
         (typeof properties.repeating_structure_name === "undefined" || properties.repeating_structure_name === null)
     ) {
 
-        let fixedImageUrl = `https:${properties.image_link}`; // because bubble doesn't passes the protocol, only the link, so we append the protocol ourselves
 
-        let providedImageName = properties.image_link.replaceAll(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker
+
+        let fixedImageUrl = protocolFix(properties.image_link); // because bubble doesn't passes the protocol, only the link, so we append the protocol ourselves
+
+        let providedImageName = protocolFix(properties.image_link).replaceAll(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker
 
 
         instance.data.docDefinition.images[`${providedImageName}`] = fixedImageUrl;
@@ -97,9 +114,9 @@ function(instance, properties, context) {
             for (i = 0; i < instance.data.repeatingStructureObjectsHolder[`${properties.repeating_structure_name}`].howManyIterations; i++) {
 
 
-                let fixedImageUrl = `https:${listOfImages[i]}`; // because bubble doesn't passes the protocol, only the link, so we append the protocol ourselves
+                let fixedImageUrl = protocolFix(listOfImages[i]); // because bubble doesn't passes the protocol, only the link, so we append the protocol ourselves
 
-                let providedImageName = `https:${listOfImages[i]}`.replaceAll(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker
+                let providedImageName = protocolFix(listOfImages[i]).replaceAll(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker
 
                 instance.data.docDefinition.images[`${providedImageName}`] = fixedImageUrl;
 
@@ -134,9 +151,9 @@ function(instance, properties, context) {
 
         } else {
 
-            let fixedImageUrl = `https:${properties.image_link}`; // because bubble doesn't passes the protocol, only the link, so we append the protocol ourselves
+            let fixedImageUrl = protocolFix(properties.image_link); // because bubble doesn't passes the protocol, only the link, so we append the protocol ourselves
 
-            let providedImageName = properties.image_link.replaceAll(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker
+            let providedImageName = protocolFix(properties.image_link).replaceAll(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker
 
             instance.data.docDefinition.images[`${providedImageName}`] = fixedImageUrl;
 

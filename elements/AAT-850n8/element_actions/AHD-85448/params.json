@@ -1,0 +1,127 @@
+{
+    "caption": "End advanced table",
+    "fields": {
+        "AHK": {
+            "caption": "Use table custom margins?",
+            "default_val": false,
+            "doc": "Below you will be able to set extra margins for your table element. Leave this field as \"no\" for a default display (will ignore any margin-related numbers below).",
+            "editor": "DynamicValue",
+            "name": "table_custom_margins",
+            "rank": 3,
+            "value": "boolean"
+        },
+        "AHL": {
+            "caption": "Table left margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_left_margin",
+            "rank": 4,
+            "value": "number"
+        },
+        "AHM": {
+            "caption": "Table top margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_top_margin",
+            "rank": 5,
+            "value": "number"
+        },
+        "AHN": {
+            "caption": "Table right margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_right_margin",
+            "rank": 6,
+            "value": "number"
+        },
+        "AHO": {
+            "caption": "Table bottom margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "table_bottom_margin",
+            "rank": 7,
+            "value": "number"
+        },
+        "AHP": {
+            "caption": "Table layout",
+            "default_val": "Standard",
+            "doc": "Choose a style and see if it pleases you!",
+            "editor": "Dropdown",
+            "name": "table_layout",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "rank": 1
+        },
+        "AHQ": {
+            "caption": "Table name",
+            "doc": "Name of the table that will be concluded.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AHR": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "doc": "Choose if this element will enforce a new page before or after itself.",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 2
+        },
+        "AHS": {
+            "caption": "Into multi column",
+            "default_val": false,
+            "doc": "Use \"yes\" to insert this table into a multi column.",
+            "editor": "DynamicValue",
+            "name": "into_multi_column",
+            "rank": 8,
+            "value": "boolean"
+        },
+        "AHT": {
+            "caption": "This multicolumn width",
+            "default_val": "Fit available space",
+            "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
+            "editor": "Dropdown",
+            "name": "this_column_width",
+            "options": "Fit available space,Fit content",
+            "rank": 10,
+            "value": "text"
+        },
+        "AHU": {
+            "caption": "Into footer",
+            "default_val": false,
+            "doc": "Use \"yes\" if this element is to be inserted into the footer.",
+            "editor": "DynamicValue",
+            "name": "into_footer",
+            "rank": 11,
+            "value": "boolean"
+        },
+        "AHV": {
+            "caption": "Into header",
+            "default_val": false,
+            "doc": "Use \"yes\" if this element is to be inserted into the header.",
+            "editor": "DynamicValue",
+            "name": "into_header",
+            "rank": 12,
+            "value": "boolean"
+        },
+        "AHW": {
+            "caption": "Into background",
+            "default_val": false,
+            "doc": "Use \"yes\" if this element is to be inserted into the background.",
+            "editor": "DynamicValue",
+            "name": "into_background",
+            "rank": 13,
+            "value": "boolean"
+        },
+        "AHX": {
+            "caption": "Multi column name",
+            "doc": "The name of the multi column you're wrapping this element within.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
+        }
+    }
+}

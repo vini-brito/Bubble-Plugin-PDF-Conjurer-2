@@ -1,0 +1,142 @@
+{
+    "caption": "Add column into advanced table",
+    "fields": {
+        "AHF": {
+            "caption": "List of items",
+            "doc": "A list of texts, number, dates and anything else supported. Will be the body of the column.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "list_of_items",
+            "rank": 1,
+            "value": "_any_thing"
+        },
+        "AHG": {
+            "caption": "Table name",
+            "doc": "Name of the table that will receive this column.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AHH": {
+            "caption": "Column width",
+            "default_val": "Fit available space",
+            "doc": "How much space the column will take. ",
+            "editor": "Dropdown",
+            "name": "column_width",
+            "options": "Fit available space,Fit content,Fixed width",
+            "rank": 3
+        },
+        "AHI": {
+            "caption": "Column header",
+            "doc": "Optional. The text that will be in the header, works as a title or label. Header examples are \"Name, Phone, Email, Cost\".",
+            "editor": "DynamicValue",
+            "name": "column_header",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "AHJ": {
+            "caption": "Header style",
+            "doc": "The name of the text style to be applied to the text of this column's header.",
+            "editor": "DynamicValue",
+            "name": "header_style",
+            "optional": true,
+            "rank": 6,
+            "value": "text"
+        },
+        "AHY": {
+            "caption": "Text body style",
+            "doc": "The name of the text style to be applied to the texts in this column.",
+            "editor": "DynamicValue",
+            "name": "text_body_style",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AHZ": {
+            "caption": "Using images",
+            "default_val": false,
+            "doc": "Everything below is only relevant if you're using images in this column. Pass \"yes\" here and the list will be rendered as an image list. You can pass both \"image\" field type or a \"text\" field type containing a list of image URLs.",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "using_images",
+            "optional": false,
+            "rank": 7,
+            "value": "boolean"
+        },
+        "AHa": {
+            "caption": "Image width",
+            "doc": "You can leave this empty, then it will use the image's original size. Specify only width and the image will scale proportionaly, specify both width and height and the image will distort to fit. Applied to the entire column.",
+            "editor": "DynamicValue",
+            "name": "image_width",
+            "optional": true,
+            "rank": 8,
+            "value": "number"
+        },
+        "AHb": {
+            "caption": "Image height",
+            "doc": "You can leave this empty, then it will use the image's original size. Specify only width and the image will scale proportionaly, specify both width and height and the image will distort to fit. Applied to the entire column.",
+            "editor": "DynamicValue",
+            "name": "image_height",
+            "optional": true,
+            "rank": 9,
+            "value": "number"
+        },
+        "AHc": {
+            "caption": "Use custom margins?",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "custom_margins",
+            "rank": 11,
+            "value": "boolean"
+        },
+        "AHd": {
+            "caption": "Below you will be able to set extra margins for your image or text element. Leave the field as \"no\" for a default display. (Will ignore any numbers below)",
+            "editor": "Label",
+            "name": "below_you_will_be_able_to_set_extra_margins_for_your_image_element._leave_the_box_unchecked_for_a_default_display._(will_ignore_any_numbers_below)",
+            "rank": 10
+        },
+        "AHe": {
+            "caption": "Left Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "left_margin",
+            "rank": 12,
+            "value": "number"
+        },
+        "AHf": {
+            "caption": "Top Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "top_margin",
+            "rank": 13,
+            "value": "number"
+        },
+        "AHg": {
+            "caption": "Right Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "right_margin",
+            "rank": 14,
+            "value": "number"
+        },
+        "AHh": {
+            "caption": "Bottom Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "bottom_margin",
+            "rank": 15,
+            "value": "number"
+        },
+        "AHi": {
+            "caption": "Fixed width size",
+            "doc": "If you select the option \"Fixed width\" in the dropdown above, then you have to specify it here. This will be ignored if you select the another option.",
+            "editor": "DynamicValue",
+            "name": "specified_column_width",
+            "optional": true,
+            "rank": 4,
+            "value": "number"
+        }
+    }
+}

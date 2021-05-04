@@ -1,0 +1,41 @@
+{
+    "caption": "Load font",
+    "fields": {
+        "AHl": {
+            "caption": "Name",
+            "doc": "The name of the font to be specified later in the \"Set style\" action. Something like \"Lobster\" (without quotes). Do not use spaces and special characters.",
+            "editor": "DynamicValue",
+            "name": "name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AHm": {
+            "caption": "Regular",
+            "editor": "DynamicValue",
+            "name": "regular",
+            "rank": 1,
+            "value": "text"
+        },
+        "AHn": {
+            "caption": "Bold",
+            "editor": "DynamicValue",
+            "name": "bold",
+            "rank": 2,
+            "value": "text"
+        },
+        "AHo": {
+            "caption": "Italics",
+            "editor": "DynamicValue",
+            "name": "italics",
+            "rank": 3,
+            "value": "text"
+        },
+        "AHp": {
+            "caption": "Bolditalics",
+            "editor": "DynamicValue",
+            "name": "bolditalics",
+            "rank": 4,
+            "value": "text"
+        }
+    }
+}

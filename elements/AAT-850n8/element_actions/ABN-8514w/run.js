@@ -388,101 +388,101 @@ function(instance, properties, context) {
 
 		var definedStyleForHeaderText = properties.header_style.replace(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker
 
-		let firstColumnHeaderAsObj = { text: properties.first_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+		let firstColumnHeaderAsObj = { text: properties.first_column_header, style: `${definedStyleForHeaderText}` };
 		arrayOfHeaders.push(firstColumnHeaderAsObj);
 
 		if (properties.use_second_column) {
-			let secondColumnHeaderAsObj = { text: properties.second_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let secondColumnHeaderAsObj = { text: properties.second_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(secondColumnHeaderAsObj);
 		}
 
 		if (properties.use_third_column) {
-			let thirdColumnHeaderAsObj = { text: properties.third_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let thirdColumnHeaderAsObj = { text: properties.third_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(thirdColumnHeaderAsObj);
 		}
 
 		if (properties.use_fourth_column) {
-			let fourthColumnHeaderAsObj = { text: properties.fourth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let fourthColumnHeaderAsObj = { text: properties.fourth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(fourthColumnHeaderAsObj);
 		}
 
 		if (properties.use_fifth_column) {
-			let fifthColumnHeaderAsObj = { text: properties.fifth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let fifthColumnHeaderAsObj = { text: properties.fifth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(fifthColumnHeaderAsObj);
 		}
 
 		if (properties.use_sixth_column) {
-			let sixthColumnHeaderAsObj = { text: properties.sixth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let sixthColumnHeaderAsObj = { text: properties.sixth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(sixthColumnHeaderAsObj);
 		}
 
 		if (properties.use_seventh_column) {
-			let seventhColumnHeaderAsObj = { text: properties.seventh_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let seventhColumnHeaderAsObj = { text: properties.seventh_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(seventhColumnHeaderAsObj);
 		}
 
 		if (properties.use_eighth_column) {
-			let eighthColumnHeaderAsObj = { text: properties.eighth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let eighthColumnHeaderAsObj = { text: properties.eighth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(eighthColumnHeaderAsObj);
 		}
 
 		if (properties.use_ninth_column) {
-			let ninthColumnHeaderAsObj = { text: properties.ninth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let ninthColumnHeaderAsObj = { text: properties.ninth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(ninthColumnHeaderAsObj);
 		}
 
 		if (properties.use_tenth_column) {
-			let tenthColumnHeaderAsObj = { text: properties.tenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let tenthColumnHeaderAsObj = { text: properties.tenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(tenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_eleventh_column) {
-			let eleventhColumnHeaderAsObj = { text: properties.eleventh_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let eleventhColumnHeaderAsObj = { text: properties.eleventh_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(eleventhColumnHeaderAsObj);
 		}
 
 		if (properties.use_twelfth_column) {
-			let twelfthColumnHeaderAsObj = { text: properties.twelfth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let twelfthColumnHeaderAsObj = { text: properties.twelfth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(twelfthColumnHeaderAsObj);
 		}
 
 		if (properties.use_thirteenth_column) {
-			let thirteenthColumnHeaderAsObj = { text: properties.thirteenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let thirteenthColumnHeaderAsObj = { text: properties.thirteenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(thirteenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_fourteenth_column) {
-			let fourteenthColumnHeaderAsObj = { text: properties.fourteenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let fourteenthColumnHeaderAsObj = { text: properties.fourteenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(fourteenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_fifteenth_column) {
-			let fifteenthColumnHeaderAsObj = { text: properties.fifteenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let fifteenthColumnHeaderAsObj = { text: properties.fifteenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(fifteenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_sixteenth_column) {
-			let sixteenthColumnHeaderAsObj = { text: properties.sixteenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let sixteenthColumnHeaderAsObj = { text: properties.sixteenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(sixteenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_seventeenth_column) {
-			let seventeenthColumnHeaderAsObj = { text: properties.seventeenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let seventeenthColumnHeaderAsObj = { text: properties.seventeenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(seventeenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_eighteenth_column) {
-			let eighteenthColumnHeaderAsObj = { text: properties.eighteenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let eighteenthColumnHeaderAsObj = { text: properties.eighteenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(eighteenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_nineteenth_column) {
-			let nineteenthColumnHeaderAsObj = { text: properties.nineteenth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let nineteenthColumnHeaderAsObj = { text: properties.nineteenth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(nineteenthColumnHeaderAsObj);
 		}
 
 		if (properties.use_twentieth_column) {
-			let twentiethColumnHeaderAsObj = { text: properties.twentieth_column_header, style: `${definedStyleForHeaderText.toLowerCase()}` };
+			let twentiethColumnHeaderAsObj = { text: properties.twentieth_column_header, style: `${definedStyleForHeaderText}` };
 			arrayOfHeaders.push(twentiethColumnHeaderAsObj);
 		}
 
@@ -623,6 +623,8 @@ function(instance, properties, context) {
 	let tableObjectHolder = {
 		table: {
 			headerRows: useHeaderRow,
+            dontBreakRows: true,
+			keepWithHeaderRows: useHeaderRow,
 			widths: arrayOfWidths,
 			body: tableBody,
 		},
