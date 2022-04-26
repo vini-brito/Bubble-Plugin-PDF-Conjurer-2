@@ -1,0 +1,213 @@
+{
+    "category": "plugins",
+    "display": "Add image on PDF",
+    "fields": {
+        "AIo": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AIp": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AIq": {
+            "caption": "Image name",
+            "editor": "DynamicValue",
+            "name": "image_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AIr": {
+            "caption": "If you've used the image before in this workflow, you can just enter the same image name that was entered previously, without having to upload it again",
+            "editor": "Label",
+            "name": "image_info",
+            "rank": 3
+        },
+        "AIs": {
+            "caption": "Has the image already been used?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "have_used_before",
+            "rank": 4
+        },
+        "AIt": {
+            "caption": "Image",
+            "editor": "DynamicValue",
+            "name": "image",
+            "optional": true,
+            "rank": 5,
+            "value": "image"
+        },
+        "AIu": {
+            "caption": "Image custom sizes (if no value is passed, the image will be at its own size, if only width is passed, the height will resize to maintain the image original scale, if only height is passed, the width will be the original image width)",
+            "editor": "Label",
+            "name": "image_info",
+            "rank": 6
+        },
+        "AIv": {
+            "caption": "Width",
+            "editor": "DynamicValue",
+            "name": "width",
+            "optional": true,
+            "rank": 7,
+            "value": "number"
+        },
+        "AIw": {
+            "caption": "Height",
+            "editor": "DynamicValue",
+            "name": "height",
+            "optional": true,
+            "rank": 8,
+            "value": "number"
+        },
+        "AIx": {
+            "caption": "Use custom margins?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "custom_margins",
+            "rank": 10
+        },
+        "AIy": {
+            "caption": "Below you will be able to set extra margins for your image element. Leave the box unchecked for a default display. (Will ignore any numbers below)",
+            "editor": "Label",
+            "name": "margin_info",
+            "rank": 11
+        },
+        "AIz": {
+            "caption": "Margin left",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_left",
+            "rank": 12,
+            "value": "number"
+        },
+        "AJA": {
+            "caption": "Margin top",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_top",
+            "rank": 13,
+            "value": "number"
+        },
+        "AJB": {
+            "caption": "Margin right",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_right",
+            "rank": 14,
+            "value": "number"
+        },
+        "AJC": {
+            "caption": "Margin bottom",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_bottom",
+            "rank": 15,
+            "value": "number"
+        },
+        "AJD": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 16
+        },
+        "AJE": {
+            "caption": "Is this element being put into the footer?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the footer.",
+            "editor": "Checkbox",
+            "name": "into_footer",
+            "rank": 21
+        },
+        "AJF": {
+            "caption": "Is this element being put into the header?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the header.",
+            "editor": "Checkbox",
+            "name": "into_header",
+            "rank": 20
+        },
+        "AJG": {
+            "caption": "Is this element being put into a Multi Column?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "into_multi_column",
+            "rank": 17
+        },
+        "AJH": {
+            "caption": "Multi column name",
+            "doc": "The name of the multi column you're wrapping this element within.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "optional": true,
+            "rank": 18,
+            "value": "text"
+        },
+        "AJI": {
+            "caption": "Column width",
+            "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
+            "editor": "Dropdown",
+            "name": "column_width",
+            "optional": true,
+            "options": "Fit available space,Fit content",
+            "rank": 19
+        },
+        "AJJ": {
+            "caption": "Image alignmet",
+            "editor": "Dropdown",
+            "name": "alignment",
+            "optional": true,
+            "options": "Left,Center,Rigth",
+            "rank": 9
+        },
+        "AJK": {
+            "caption": "Repeating structure auxiliary fields. Only use the fields below if this element is being inserted into a repeating structure",
+            "editor": "Label",
+            "name": "repeating_structure_auxiliary_fields",
+            "rank": 23
+        },
+        "AJL": {
+            "caption": "Is this element being put into the background?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the background.",
+            "editor": "Checkbox",
+            "name": "into_background",
+            "rank": 22
+        },
+        "AJM": {
+            "caption": "Structure name",
+            "doc": "The unique name of the repeating structure this image is being inserted into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "optional": true,
+            "rank": 24,
+            "value": "text"
+        },
+        "AJN": {
+            "caption": "Image list",
+            "doc": "Optional. If you fill this field (list of images url), the field \"Image\" up there must be empty. With this field you can pass a list to be displayed, for example the first image of the list will appear in the first structure. Leave this one blank and the image up there will be used and every repeated image will be the same, this is ideal for images that won't change for example images that are part of the structural design instead of user profile image or product images. If you want to pass multiple user or product images, the pass the list of images here.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "image_list",
+            "optional": true,
+            "rank": 25,
+            "value": "image"
+        }
+    },
+    "return_value": {
+        "AEq": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

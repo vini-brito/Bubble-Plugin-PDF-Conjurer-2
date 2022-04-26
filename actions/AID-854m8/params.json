@@ -1,0 +1,81 @@
+{
+    "category": "plugins",
+    "display": "Upload PDF",
+    "fields": {
+        "AHx": {
+            "caption": "Upload file URL",
+            "doc": "The URL from your backend upload workflow (Example: https://<plugin_name>.bubbleapps.io/<version>/api/<v>/wf/<upload_worflow>)",
+            "editor": "DynamicValue",
+            "name": "upload_url",
+            "rank": 1,
+            "value": "text"
+        },
+        "AHy": {
+            "caption": "File name",
+            "doc": "File name resulting of the action \"Conjure PDF\"",
+            "editor": "DynamicValue",
+            "name": "file_name",
+            "rank": 3,
+            "value": "text"
+        },
+        "AHz": {
+            "caption": "Content",
+            "doc": "Content resulting of the action \"Conjure PDF\"",
+            "editor": "DynamicValue",
+            "name": "file_data",
+            "rank": 4,
+            "value": "text"
+        },
+        "AIA": {
+            "caption": "File input name",
+            "doc": "The file field name (or key) in the backend upload workflow",
+            "editor": "DynamicValue",
+            "name": "file_input",
+            "rank": 2,
+            "value": "text"
+        },
+        "AIB": {
+            "caption": "Authentication",
+            "doc": "Token provided by an authentication workflow, it's necessary if the upload workflow need to be authenticated",
+            "editor": "DynamicValue",
+            "name": "token",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "AIC": {
+            "caption": "In order to upload the PDF file, you need to create a backend workflow that receive a file input! From this workflow returns the file URL and other informations that you want",
+            "editor": "Label",
+            "name": "upload_info",
+            "rank": 0
+        },
+        "AOn": {
+            "caption": "Make this file private?",
+            "default_val": false,
+            "doc": "Set \"yes\" if you want a private file",
+            "editor": "DynamicValue",
+            "name": "private",
+            "rank": 6,
+            "value": "boolean"
+        },
+        "AOo": {
+            "caption": "Attach this file to",
+            "doc": "If you want to make a private file, set the user that the file will be attached",
+            "editor": "DynamicValue",
+            "name": "attach_to",
+            "optional": true,
+            "rank": 7,
+            "value": "user"
+        }
+    },
+    "return_value": {
+        "ACq": {
+            "caption": "Result",
+            "name": "result",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}

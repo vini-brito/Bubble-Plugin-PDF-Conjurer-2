@@ -137,6 +137,15 @@
             "optional": true,
             "rank": 4,
             "value": "number"
+        },
+        "AON": {
+            "caption": "Parse BBCode?",
+            "default_val": false,
+            "doc": "Remember that the style defined in BBCode will override the same style defined in the \"Define new style for\" action ",
+            "editor": "DynamicValue",
+            "name": "parse_bbcode",
+            "rank": 16,
+            "value": "boolean"
         }
     }
 }

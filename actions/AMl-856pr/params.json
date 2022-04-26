@@ -1,0 +1,38 @@
+{
+    "category": "plugins",
+    "display": "End repeating structure on PDF",
+    "fields": {
+        "AMi": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "default_val": "",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0,
+            "value": "text"
+        },
+        "AMj": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AMk": {
+            "caption": "Name",
+            "doc": "The name of the structure you're finishing.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AID": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

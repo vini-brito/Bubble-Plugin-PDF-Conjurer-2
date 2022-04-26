@@ -12,6 +12,10 @@
             "caption": "finished uploading and is available in element state",
             "doc": "This is triggered when the PDF finishes being uploaded and becomes available in the element state.",
             "name": "pdf_uploaded_and_available_in_element_state"
+        },
+        "AOq": {
+            "caption": "Debug log available",
+            "name": "debug_log_available"
         }
     },
     "fields": {
@@ -32,6 +36,14 @@
             },
             "name": "saved_pdf",
             "value": "file"
+        },
+        "AOr": {
+            "caption": "Debug log content",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "debug_log_dump",
+            "value": "text"
         }
     }
 }

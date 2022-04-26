@@ -1,0 +1,131 @@
+{
+    "category": "plugins",
+    "display": "End repeated table on PDF",
+    "fields": {
+        "AND": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "ANE": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "ANF": {
+            "caption": "Table name",
+            "doc": "Unique table name so you can add columns to it and end it.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "ANG": {
+            "caption": "Repeating structure name",
+            "doc": "The repeating structure this table is being repeated into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "rank": 3,
+            "value": "text"
+        },
+        "ANH": {
+            "caption": "Use table custom margins?",
+            "default_val": false,
+            "doc": "If yes, below you will be able to set margins for your table element. Leave this field as \"no\" for a default display, will ignore any margin-related numbers below.",
+            "editor": "DynamicValue",
+            "name": "custom_margins",
+            "rank": 4,
+            "value": "boolean"
+        },
+        "ANI": {
+            "caption": "Table left margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "left_margin",
+            "rank": 5,
+            "value": "number"
+        },
+        "ANJ": {
+            "caption": "Table top margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "top_margin",
+            "rank": 6,
+            "value": "number"
+        },
+        "ANK": {
+            "caption": "Table right margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "right_margin",
+            "rank": 7,
+            "value": "number"
+        },
+        "ANL": {
+            "caption": "Table bottom margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "bottom_margin",
+            "rank": 8,
+            "value": "number"
+        },
+        "ANM": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "doc": "Choose if this element will try to enforce a new page before or after itself.",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 9,
+            "value": "text"
+        },
+        "ANN": {
+            "caption": "Table layout",
+            "default_val": "Standard",
+            "doc": "Choose one and see (: ",
+            "editor": "Dropdown",
+            "name": "table_layout",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "rank": 10
+        },
+        "ANO": {
+            "caption": "Into multi column",
+            "default_val": false,
+            "doc": "\"Yes\" to insert this repeated table into a repeated multi column.",
+            "editor": "DynamicValue",
+            "name": "into_multi_column",
+            "rank": 11,
+            "value": "boolean"
+        },
+        "ANP": {
+            "caption": "Multi column name",
+            "doc": "The name of the multi column that this repeated table is being inserted into. Use this only with a multi column that is also being inserted into a repeating structure.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "optional": true,
+            "rank": 12,
+            "value": "text"
+        },
+        "ANQ": {
+            "caption": "Multi column width",
+            "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
+            "editor": "Dropdown",
+            "name": "multi_column_width",
+            "optional": true,
+            "options": "Fit available space,Fit content",
+            "rank": 13
+        }
+    },
+    "return_value": {
+        "AKT": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

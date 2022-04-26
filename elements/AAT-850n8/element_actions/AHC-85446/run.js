@@ -47,7 +47,16 @@ function(instance, properties, context) {
 
         };
 
-        let currentList = getList(properties.list_of_items, 0, properties.list_of_items.length());
+        let currentList;
+
+        if (properties.list_of_items === null) {
+
+            currentList = [];
+
+        } else {
+
+            currentList = getList(properties.list_of_items, 0, properties.list_of_items.length());
+        }
 
         const turnUrlIntoImageObject = (url) => {
 
@@ -104,6 +113,24 @@ function(instance, properties, context) {
         // normal flow
 
         const turnStringIntoTextObject = (string) => {
+            
+            if (properties.parse_bbcode) {
+                const parser = getParser(
+            		pdfMake.fonts, 
+            		(imageName, link) => {
+                		instance.data.docDefinition.images[imageName] = link;
+            		}, 
+            		(err) => {
+                		context.reportDebugger(err.message);
+            		}
+        		);
+                
+                return {
+                    stack: parser.getParsedText(string),
+                    style: properties.text_body_style,
+                    margin: customMarginsDefinitionLogic()
+                }
+            }
 
             return {
 
@@ -116,7 +143,16 @@ function(instance, properties, context) {
 
         };
 
-        let currentList = getList(properties.list_of_items, 0, properties.list_of_items.length());
+        let currentList;
+        
+        if (properties.list_of_items === null) {
+
+            currentList = [];
+
+        } else {
+
+            currentList = getList(properties.list_of_items, 0, properties.list_of_items.length());
+        }
 
 
         let textObjectsList = currentList.map(turnStringIntoTextObject);
@@ -129,6 +165,20 @@ function(instance, properties, context) {
         if (typeof properties.column_header !== "undefined" && properties.column_header !== null) {
 
             let columnHeaderAsObj = { text: properties.column_header, style: properties.header_style };
+            
+            if (properties.parse_bbcode) {
+                const parser = getParser(
+            		pdfMake.fonts, 
+            		(imageName, link) => {
+                		instance.data.docDefinition.images[imageName] = link;
+            		}, 
+            		(err) => {
+                		context.reportDebugger(err.message);
+            		}
+        		);
+                
+                columnHeaderAsObj = { stack: parser.getParsedText(properties.column_header), style: properties.header_style };
+            }
 
             instance.data[`${properties.table_name}`].arrayOfHeaders.push(columnHeaderAsObj);
 

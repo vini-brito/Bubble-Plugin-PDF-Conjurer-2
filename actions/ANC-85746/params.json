@@ -1,0 +1,111 @@
+{
+    "category": "plugins",
+    "display": "Add column to a repeated table on PDF",
+    "fields": {
+        "AMr": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AMs": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AMt": {
+            "caption": "Attention: This advanced action is only to be used inside a \"Repeated structure\".",
+            "editor": "Label",
+            "name": "info",
+            "rank": 3
+        },
+        "AMu": {
+            "caption": "Thing type",
+            "doc": "The type of thing you want this column to read lists of data from.",
+            "editor": "custom_type",
+            "name": "thing_type",
+            "rank": 4
+        },
+        "AMv": {
+            "caption": "Field of thing",
+            "doc": "A list type field of the thing specified above. Each repeated table will make the list in this field into a table column.",
+            "editor": "custom_field_AMu",
+            "name": "field_of_thing",
+            "rank": 5
+        },
+        "AMw": {
+            "caption": "Data source",
+            "doc": "List of things to draw data from. For example the first repeated table will read the first thing in this list and then pick the list of text/number/date/etc inside it and use to form the column. In other words, here you must pass a list of lists. Don't worry, experiment and see what happens. Be courageous! 😊",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_source",
+            "rank": 6,
+            "value": "custom_data_AMu"
+        },
+        "AMx": {
+            "caption": "Table name",
+            "doc": "Unique repeated table name so you can add columns to it and end it.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AMy": {
+            "caption": "Column header",
+            "doc": "The title of this column. Can be empty.",
+            "editor": "DynamicValue",
+            "name": "column_header",
+            "optional": true,
+            "rank": 8,
+            "value": "text"
+        },
+        "AMz": {
+            "caption": "Column style",
+            "doc": "Column body style",
+            "editor": "DynamicValue",
+            "name": "column_style",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "ANA": {
+            "caption": "Header style",
+            "doc": "Column header style",
+            "editor": "DynamicValue",
+            "name": "header_style",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
+        },
+        "ANB": {
+            "caption": "Column width",
+            "default_val": "Fit available space",
+            "editor": "Dropdown",
+            "name": "column_width",
+            "optional": true,
+            "options": "Fit available space,Fit content",
+            "rank": 10
+        },
+        "AOY": {
+            "caption": "Parse BBCode?",
+            "default_val": false,
+            "doc": "Want to parse this column BBCode?",
+            "editor": "DynamicValue",
+            "name": "parse_bbcode",
+            "rank": 11,
+            "value": "boolean"
+        }
+    },
+    "return_value": {
+        "AKI": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

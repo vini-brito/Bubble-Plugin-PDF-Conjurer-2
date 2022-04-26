@@ -1,0 +1,80 @@
+{
+    "category": "plugins",
+    "display": "Define new style to PDF",
+    "fields": {
+        "AJY": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AJZ": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AJa": {
+            "caption": "Style name",
+            "editor": "DynamicValue",
+            "name": "style_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AJb": {
+            "caption": "Font size",
+            "editor": "DynamicValue",
+            "name": "font_size",
+            "rank": 3,
+            "value": "number"
+        },
+        "AJc": {
+            "caption": "Bold",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "bold",
+            "rank": 4
+        },
+        "AJd": {
+            "caption": "Italics",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "italics",
+            "rank": 5
+        },
+        "AJe": {
+            "caption": "Alignment",
+            "editor": "Dropdown",
+            "name": "alignment",
+            "optional": false,
+            "options": "Left,Center,Right,Justify",
+            "rank": 6
+        },
+        "AJf": {
+            "caption": "Text color",
+            "default_val": "rgba(0, 0, 0, 1)",
+            "editor": "Color",
+            "name": "color",
+            "rank": 7
+        },
+        "AJg": {
+            "caption": "Font name",
+            "default_val": "Roboto",
+            "doc": "Load a new font through the \"Load font to PDF\" action, them write its name exatly as you entered in the action. The fonts Roboto, Times New Roman, Courier New and Helvetica are already preloaded, you don't need to do anything to use these fonts, the font that is used by default is the Roboto",
+            "editor": "DynamicValue",
+            "name": "font_name",
+            "rank": 8,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AFO": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

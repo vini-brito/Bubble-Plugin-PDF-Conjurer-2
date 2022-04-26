@@ -1,0 +1,149 @@
+{
+    "category": "plugins",
+    "display": "End advanced table on PDF",
+    "fields": {
+        "ANp": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "ANq": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "ANr": {
+            "caption": "Table name",
+            "doc": "Name of the table that will be concluded.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "ANs": {
+            "caption": "Table layout",
+            "default_val": "Standard",
+            "doc": "Choose a style and see if it pleases you!",
+            "editor": "Dropdown",
+            "name": "table_layout",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "rank": 3
+        },
+        "ANt": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "doc": "Choose if this element will enforce a new page before or after itself.",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 4
+        },
+        "ANu": {
+            "caption": "Use table custom margins?",
+            "default_val": false,
+            "doc": "Below you will be able to set extra margins for your table element. Leave this field as \"no\" for a default display (will ignore any margin-related numbers below).",
+            "editor": "DynamicValue",
+            "name": "table_custom_margins",
+            "rank": 5,
+            "value": "boolean"
+        },
+        "ANv": {
+            "caption": "Table left margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "left_margin",
+            "rank": 6,
+            "value": "number"
+        },
+        "ANw": {
+            "caption": "Table top margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "top_margin",
+            "rank": 7,
+            "value": "number"
+        },
+        "ANx": {
+            "caption": "Table right margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "right_margin",
+            "rank": 8,
+            "value": "number"
+        },
+        "ANy": {
+            "caption": "Table bottom margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "bottom_margin",
+            "rank": 9,
+            "value": "number"
+        },
+        "ANz": {
+            "caption": "Into multi column",
+            "default_val": false,
+            "doc": "Use \"yes\" to insert this table into a multi column.",
+            "editor": "DynamicValue",
+            "name": "into_multi_column",
+            "rank": 10,
+            "value": "boolean"
+        },
+        "AOA": {
+            "caption": "Multi column name",
+            "doc": "The name of the multi column you're wrapping this element within.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        },
+        "AOB": {
+            "caption": "This multicolumn width",
+            "default_val": "Fit available space",
+            "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
+            "editor": "Dropdown",
+            "name": "this_column_width",
+            "options": "Fit available space,Fit content",
+            "rank": 12
+        },
+        "AOC": {
+            "caption": "Into header",
+            "default_val": false,
+            "doc": "Use \"yes\" if this element is to be inserted into the header.",
+            "editor": "DynamicValue",
+            "name": "into_header",
+            "rank": 13,
+            "value": "boolean"
+        },
+        "AOD": {
+            "caption": "Into footer",
+            "default_val": false,
+            "doc": "Use \"yes\" if this element is to be inserted into the footer.",
+            "editor": "DynamicValue",
+            "name": "into_footer",
+            "rank": 14,
+            "value": "boolean"
+        },
+        "AOE": {
+            "caption": "Into background",
+            "default_val": false,
+            "doc": "Use \"yes\" if this element is to be inserted into the background.",
+            "editor": "DynamicValue",
+            "name": "into_background",
+            "rank": 15,
+            "value": "boolean"
+        }
+    },
+    "return_value": {
+        "AIx": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

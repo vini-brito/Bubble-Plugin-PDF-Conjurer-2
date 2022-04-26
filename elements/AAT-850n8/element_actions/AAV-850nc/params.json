@@ -18,7 +18,7 @@
             "editor": "DynamicValue",
             "name": "textStyles",
             "optional": true,
-            "rank": 1,
+            "rank": 2,
             "value": "text"
         },
         "AAn": {
@@ -26,7 +26,7 @@
             "default_val": 0,
             "editor": "DynamicValue",
             "name": "left_margin",
-            "rank": 4,
+            "rank": 5,
             "value": "number"
         },
         "AAo": {
@@ -34,7 +34,7 @@
             "default_val": 0,
             "editor": "DynamicValue",
             "name": "top_margin",
-            "rank": 5,
+            "rank": 6,
             "value": "number"
         },
         "AAp": {
@@ -42,7 +42,7 @@
             "default_val": 0,
             "editor": "DynamicValue",
             "name": "right_margin",
-            "rank": 6,
+            "rank": 7,
             "value": "number"
         },
         "AAq": {
@@ -50,14 +50,14 @@
             "default_val": 0,
             "editor": "DynamicValue",
             "name": "bottom_margin",
-            "rank": 7,
+            "rank": 8,
             "value": "number"
         },
         "ABC": {
             "caption": "Below you will be able to set extra margins for your text element. Leave the box unchecked for a default display. (Will ignore any numbers below)",
             "editor": "Label",
             "name": "margin_info",
-            "rank": 3
+            "rank": 4
         },
         "ABM": {
             "caption": "Use text custom margins?",
@@ -65,7 +65,7 @@
             "doc": "",
             "editor": "Checkbox",
             "name": "text_custom_margins",
-            "rank": 2
+            "rank": 3
         },
         "AEP": {
             "caption": "Page break",
@@ -74,7 +74,7 @@
             "editor": "Dropdown",
             "name": "page_break",
             "options": "Unspecified,Before,After",
-            "rank": 8
+            "rank": 9
         },
         "AEa": {
             "caption": "Is this element being put into a Multi Column?",
@@ -82,7 +82,7 @@
             "doc": "Mark this box if this element is between the Start and End of a multi column element.",
             "editor": "Checkbox",
             "name": "into_multi_column",
-            "rank": 9
+            "rank": 10
         },
         "AEb": {
             "caption": "This Column's Width",
@@ -92,7 +92,7 @@
             "name": "this_column_width",
             "optional": true,
             "options": "Fit available space,Fit content",
-            "rank": 10
+            "rank": 11
         },
         "AEc": {
             "caption": "Multi Column Name",
@@ -100,7 +100,7 @@
             "editor": "DynamicValue",
             "name": "multi_column_name",
             "optional": true,
-            "rank": 11,
+            "rank": 12,
             "value": "text"
         },
         "AFS": {
@@ -109,7 +109,7 @@
             "doc": "Mark this box if this element is to be inserted into the footer.",
             "editor": "Checkbox",
             "name": "into_footer",
-            "rank": 12
+            "rank": 13
         },
         "AFZ": {
             "caption": "Is this element being put into the header?",
@@ -117,7 +117,7 @@
             "doc": "Mark this box if this element is to be inserted into the header.",
             "editor": "Checkbox",
             "name": "into_header",
-            "rank": 13
+            "rank": 14
         },
         "AFr": {
             "caption": "Is this element being put into the background?",
@@ -125,13 +125,13 @@
             "doc": "Mark this box if this element is to be inserted into the background.",
             "editor": "Checkbox",
             "name": "into_background",
-            "rank": 14
+            "rank": 15
         },
         "AGF": {
             "caption": "Repeating structure auxiliary fields. Only use the fields below if this element is being inserted into a repeating structure",
             "editor": "Label",
             "name": "repeating_structure_auxiliary_fields",
-            "rank": 15
+            "rank": 16
         },
         "AGG": {
             "caption": "Structure name",
@@ -139,7 +139,7 @@
             "editor": "DynamicValue",
             "name": "repeating_structure_name",
             "optional": true,
-            "rank": 16,
+            "rank": 17,
             "value": "text"
         },
         "AGH": {
@@ -149,8 +149,17 @@
             "is_list": true,
             "name": "text_list",
             "optional": true,
-            "rank": 17,
+            "rank": 18,
             "value": "_any_thing"
+        },
+        "AHw": {
+            "caption": "Parse BBcode",
+            "default_val": false,
+            "doc": "Remember that the style defined in BBCode will override the same style defined in the \"Define new style for\" action",
+            "editor": "DynamicValue",
+            "name": "parse_bbcode",
+            "rank": 1,
+            "value": "boolean"
         }
     }
 }

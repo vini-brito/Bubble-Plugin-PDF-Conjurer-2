@@ -1,0 +1,184 @@
+{
+    "category": "plugins",
+    "display": "Add text on PDF",
+    "fields": {
+        "AIN": {
+            "caption": "Previous step result",
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AIO": {
+            "caption": "Text",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "text",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AIP": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AIQ": {
+            "caption": "Parse BBCode",
+            "default_val": false,
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "parse_bbcode",
+            "rank": 3,
+            "value": "boolean"
+        },
+        "AIR": {
+            "caption": "Set text custom margins?",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "custom_margins",
+            "rank": 5
+        },
+        "AIS": {
+            "caption": "Below you will be able to set extra margins for your text element. Leave the box unchecked for a default display. (Will ignore any numbers below)",
+            "editor": "Label",
+            "name": "margin_info",
+            "rank": 6
+        },
+        "AIT": {
+            "caption": "Margin top",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_top",
+            "rank": 8,
+            "value": "number"
+        },
+        "AIU": {
+            "caption": "Margin left",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_left",
+            "rank": 7,
+            "value": "number"
+        },
+        "AIV": {
+            "caption": "Margin right",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_right",
+            "rank": 9,
+            "value": "number"
+        },
+        "AIW": {
+            "caption": "Margin bottom",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_bottom",
+            "rank": 10,
+            "value": "number"
+        },
+        "AIX": {
+            "caption": "Style name",
+            "editor": "DynamicValue",
+            "name": "style",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "AIY": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "doc": "Choose if this element will try to enforce a new page before or after itself.",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 11
+        },
+        "AIZ": {
+            "caption": "Put into a Multi Column?",
+            "default_val": false,
+            "doc": "Mark this box if this element is between the Start and End of a multi column element.",
+            "editor": "Checkbox",
+            "name": "into_multi_column",
+            "rank": 12
+        },
+        "AIa": {
+            "caption": "This Column's Width",
+            "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
+            "editor": "Dropdown",
+            "name": "column_width",
+            "optional": true,
+            "options": "Fit available space,Fit content",
+            "rank": 13
+        },
+        "AIb": {
+            "caption": "Is this element being put into the footer?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the footer.",
+            "editor": "Checkbox",
+            "name": "into_footer",
+            "rank": 16
+        },
+        "AIc": {
+            "caption": "Is this element being put into the header?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the header.",
+            "editor": "Checkbox",
+            "name": "into_header",
+            "rank": 15
+        },
+        "AId": {
+            "caption": "Multi column name",
+            "doc": "The name of the multi column you're wrapping this element within.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "optional": true,
+            "rank": 14,
+            "value": "text"
+        },
+        "AIe": {
+            "caption": "Is this element being put into the background?",
+            "default_val": false,
+            "doc": "Mark this box if this element is to be inserted into the background.",
+            "editor": "Checkbox",
+            "name": "into_background",
+            "rank": 17
+        },
+        "AIf": {
+            "caption": "Repeating structure auxiliary fields. Only use the fields below if this element is being inserted into a repeating structure",
+            "editor": "Label",
+            "name": "repeating_structure_auxiliary_fields",
+            "rank": 18
+        },
+        "AIg": {
+            "caption": "Structure name",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "optional": true,
+            "rank": 19,
+            "value": "text"
+        },
+        "AIh": {
+            "caption": "Text list",
+            "doc": "Optional. If you fill this field, the field \"Text\" up there will be ignored. With this field you can pass a list to be displayed, for example the first item of the list will appear in the first structure. Leave this one blank and the text up there will be used and every repeated text will be the same, this is ideal for texts that won't change for example labels (\"Name\", \"Phone\", etc) and sometimes titles.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "text_list",
+            "optional": true,
+            "rank": 20,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AER": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

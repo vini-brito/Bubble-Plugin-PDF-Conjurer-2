@@ -45,6 +45,15 @@
             "optional": true,
             "rank": 4,
             "value": "boolean"
+        },
+        "AOp": {
+            "caption": "Debug log",
+            "default_val": false,
+            "doc": "If you pass \"yes\" to this option, it will log an internal value to your browser console that will help diagnosing issues. It has no effect in the PDF itself. It will also trigger the event \"Debug log available\" and inside that event you will be able to get the debug log, if you are having intermittent issues I recommend storing these logs in your database, so once you know a faulty conjuration happened, you will be able to locate its log and bring it to the plugin creator for assistance.",
+            "editor": "DynamicValue",
+            "name": "debug_log",
+            "rank": 5,
+            "value": "boolean"
         }
     }
 }

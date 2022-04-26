@@ -1,0 +1,146 @@
+{
+    "category": "plugins",
+    "display": "Activate header on PDF",
+    "fields": {
+        "AJi": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AJj": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AJk": {
+            "caption": "You can put elements in the header by checking the box at the element itself that says \"insert this element into header?\".",
+            "editor": "Label",
+            "name": "header_info",
+            "rank": 2
+        },
+        "AJl": {
+            "caption": "Show page number? (counter)",
+            "default_val": false,
+            "doc": "Check this box to have you pages numerated in the header. Below you can tell what pages you want the number to not show, for example you want the first page (possibly a cover) to not show the number one.",
+            "editor": "Checkbox",
+            "name": "show_page_number",
+            "rank": 3
+        },
+        "AJm": {
+            "caption": "Start count on second page",
+            "default_val": false,
+            "doc": "Check this box if you want the second page to be numerated with 1 and the remaining pages follow this order.",
+            "editor": "Checkbox",
+            "name": "start_count_on_second_page",
+            "rank": 4
+        },
+        "AJn": {
+            "caption": "Even pages counter alignment",
+            "default_val": "Left",
+            "editor": "Dropdown",
+            "name": "even_page_alignment",
+            "optional": false,
+            "options": "Left,Center,Right",
+            "rank": 5
+        },
+        "AJo": {
+            "caption": "Odd pages counter alignment",
+            "default_val": "Right",
+            "editor": "Dropdown",
+            "name": "odd_page_alignment",
+            "optional": false,
+            "options": "Left,Center,Right",
+            "rank": 6
+        },
+        "AJp": {
+            "caption": "Hide page number (counter) on specific pages?",
+            "default_val": false,
+            "doc": "Check this box if you want to specify below the pages you want the page number to not appear.",
+            "editor": "Checkbox",
+            "name": "use_exclude_pages",
+            "rank": 7
+        },
+        "AJq": {
+            "caption": "Hide counter on",
+            "doc": "Write here the page numbers you want the page count number not to show, like if you have a cover in the first page and want the number not to show, type 1. If you have several chapter covers (just an example) along your document and want them to not show the page count number, you may write the page numbers separated by comma, like this 1,3,5,10.",
+            "editor": "DynamicValue",
+            "name": "exclude_pages_counter",
+            "optional": true,
+            "rank": 8,
+            "value": "text"
+        },
+        "AJr": {
+            "caption": "Hide header elements on specific pages?",
+            "default_val": false,
+            "doc": "Check this box if you want to specify below the pages you want the elements (text, images and tables) you inserted into the header to not appear.",
+            "editor": "Checkbox",
+            "name": "use_exclude_elements_pages",
+            "rank": 9
+        },
+        "AJs": {
+            "caption": "Hide elements on",
+            "doc": "Write here the page numbers you want the header elements (texts, images and tables) not to show, like if you have a cover in the first page and want the elements not to show there, type 1. If you have several chapter covers (just an example) along your document and want them to not show the header elements, you may write the page numbers separated by comma, like this 1,3,5,10.",
+            "editor": "DynamicValue",
+            "name": "exclude_elements_pages",
+            "optional": true,
+            "rank": 10,
+            "value": "text"
+        },
+        "AJt": {
+            "caption": "* Please note that page numbers starts in number 1, if you chose to start counting on the second page the first page will turn into number 0.",
+            "editor": "Label",
+            "name": "page_numbers_info",
+            "rank": 11
+        },
+        "AJu": {
+            "caption": "Page number margins",
+            "editor": "Label",
+            "name": "magin_info",
+            "rank": 12
+        },
+        "AJv": {
+            "caption": "Left margin ",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_left",
+            "rank": 13,
+            "value": "number"
+        },
+        "AJw": {
+            "caption": "Top margin ",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_top",
+            "rank": 14,
+            "value": "number"
+        },
+        "AJx": {
+            "caption": "Right margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_right",
+            "rank": 15,
+            "value": "number"
+        },
+        "AJy": {
+            "caption": "Bottom margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_bottom",
+            "rank": 16,
+            "value": "number"
+        }
+    },
+    "return_value": {
+        "AFc": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

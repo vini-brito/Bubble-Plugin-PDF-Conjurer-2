@@ -1,0 +1,71 @@
+{
+    "category": "plugins",
+    "display": "Start multi-column on PDF",
+    "fields": {
+        "AKS": {
+            "caption": "Multi Column Name",
+            "doc": "This won't be shown in the pdf. This is only an internal reference so you type this same name when you want to insert elements inside this multi column. Tables, images and text are insertable. Note that inserted elements must be between the Start and End actions.",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AKT": {
+            "caption": "Page break",
+            "default_val": "Unspecified",
+            "editor": "Dropdown",
+            "name": "page_break",
+            "options": "Unspecified,Before,After",
+            "rank": 4
+        },
+        "AKU": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AKV": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AKW": {
+            "caption": "Columns gap",
+            "doc": "Space between the columns",
+            "editor": "DynamicValue",
+            "name": "columns_gap",
+            "optional": true,
+            "rank": 3,
+            "value": "number"
+        },
+        "AKX": {
+            "caption": "Being repeated",
+            "default_val": false,
+            "doc": "If this column is being repeated inside a repeating structure, use \"yes\".",
+            "editor": "DynamicValue",
+            "name": "being_repeated",
+            "rank": 5,
+            "value": "boolean"
+        },
+        "AKY": {
+            "caption": "Repeating structure name",
+            "doc": "The name of the repeating structure this multi column is going to be repeated into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "optional": true,
+            "rank": 6,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AGV": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

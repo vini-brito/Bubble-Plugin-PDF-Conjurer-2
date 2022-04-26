@@ -626,7 +626,26 @@ function(instance, properties, context) {
             dontBreakRows: true,
 			keepWithHeaderRows: useHeaderRow,
 			widths: arrayOfWidths,
-			body: tableBody,
+			body: properties.parse_bbcode 
+            	? tableBody.map((line) => line.map((obj) => {
+                    const { text, style: lineStyle } = obj;
+                    
+                    const targetString = text || obj;
+                    const style = lineStyle || '';
+                    
+                    const parser = getParser(
+            			pdfMake.fonts, 
+            			(imageName, link) => {
+                			instance.data.docDefinition.images[imageName] = link;
+            			}, 
+            			(err) => {
+                			context.reportDebugger(err.message);
+            			}
+        			);
+                    
+                    return { stack: parser.getParsedText(targetString), style };
+                })) 
+                : tableBody,
 		},
 		style: `${definedStyleForTable.toLowerCase()}`,
 		margin: tableCustomMarginsDefinitionLogic(),

@@ -1,0 +1,174 @@
+{
+    "category": "plugins",
+    "display": "Add column into advanced table on PDF",
+    "fields": {
+        "ANW": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "ANX": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "ANY": {
+            "caption": "Table name",
+            "doc": "Name of the table that will receive this column.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "ANZ": {
+            "caption": "List of items",
+            "doc": "A list of texts, number, dates and anything else supported. Will be the body of the column.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "items_list",
+            "optional": true,
+            "rank": 3,
+            "value": "_any_thing"
+        },
+        "ANa": {
+            "caption": "Text body style",
+            "doc": "The name of the text style to be applied to the texts in this column.",
+            "editor": "DynamicValue",
+            "name": "text_body_style",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "ANb": {
+            "caption": "Column width",
+            "default_val": "Fit available space",
+            "doc": "How much space the column will take. ",
+            "editor": "Dropdown",
+            "name": "column_width",
+            "options": "Fit available space,Fit content,Fixed width",
+            "rank": 5
+        },
+        "ANc": {
+            "caption": "Fixed width size",
+            "doc": "If you select the option \"Fixed width\" in the dropdown above, then you have to specify it here. This will be ignored if you select the another option.",
+            "editor": "DynamicValue",
+            "name": "specified_column_width",
+            "optional": true,
+            "rank": 6,
+            "value": "number"
+        },
+        "ANd": {
+            "caption": "Column header",
+            "doc": "Optional. The text that will be in the header, works as a title or label. Header examples are \"Name, Phone, Email, Cost\".",
+            "editor": "DynamicValue",
+            "name": "column_header",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "ANe": {
+            "caption": "Header style",
+            "doc": "The name of the text style to be applied to the text of this column's header.",
+            "editor": "DynamicValue",
+            "name": "header_style",
+            "optional": true,
+            "rank": 8,
+            "value": "text"
+        },
+        "ANf": {
+            "caption": "Using images",
+            "default_val": false,
+            "doc": "Everything below is only relevant if you're using images in this column. Pass \"yes\" here and the list will be rendered as an image list. You can pass both \"image\" field type or a \"text\" field type containing a list of image URLs.",
+            "editor": "DynamicValue",
+            "name": "using_images",
+            "rank": 9,
+            "value": "boolean"
+        },
+        "ANg": {
+            "caption": "Image width",
+            "doc": "You can leave this empty, then it will use the image's original size. Specify only width and the image will scale proportionaly, specify both width and height and the image will distort to fit. Applied to the entire column.",
+            "editor": "DynamicValue",
+            "name": "image_width",
+            "optional": true,
+            "rank": 10,
+            "value": "number"
+        },
+        "ANh": {
+            "caption": "Image height",
+            "doc": "You can leave this empty, then it will use the image's original size. Specify only width and the image will scale proportionaly, specify both width and height and the image will distort to fit. Applied to the entire column.",
+            "editor": "DynamicValue",
+            "name": "image_height",
+            "optional": true,
+            "rank": 11,
+            "value": "number"
+        },
+        "ANi": {
+            "caption": "Below you will be able to set extra margins for your image or text element. Leave the field as \"no\" for a default display. (Will ignore any numbers below)",
+            "editor": "Label",
+            "name": "margin_info",
+            "rank": 12
+        },
+        "ANj": {
+            "caption": "Use custom margins?",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "custom_margins",
+            "rank": 13,
+            "value": "boolean"
+        },
+        "ANk": {
+            "caption": "Left Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "left_margin",
+            "rank": 14,
+            "value": "number"
+        },
+        "ANl": {
+            "caption": "Top Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "top_margin",
+            "rank": 15,
+            "value": "number"
+        },
+        "ANm": {
+            "caption": "Right Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "right_margin",
+            "rank": 16,
+            "value": "number"
+        },
+        "ANn": {
+            "caption": "Bottom Margin",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "bottom_margin",
+            "rank": 17,
+            "value": "number"
+        },
+        "AOR": {
+            "caption": "Parse BBCode?",
+            "default_val": false,
+            "doc": "Want to parse this column BBCode?",
+            "editor": "DynamicValue",
+            "name": "parse_bbcode",
+            "rank": 18,
+            "value": "boolean"
+        }
+    },
+    "return_value": {
+        "AIu": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

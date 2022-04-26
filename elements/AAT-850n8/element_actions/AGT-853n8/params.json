@@ -54,6 +54,15 @@
             "editor": "Label",
             "name": "attention:_this_advanced_action_is_only_to_be_used_inside_a_\"repeated_structure\".",
             "rank": 0
+        },
+        "AOO": {
+            "caption": "Parse BBCode",
+            "default_val": false,
+            "doc": "Remember that the style defined in BBCode will override the same style defined in the \"Define new style for\" action",
+            "editor": "DynamicValue",
+            "name": "parse_bbcode",
+            "rank": 7,
+            "value": "boolean"
         }
     }
 }

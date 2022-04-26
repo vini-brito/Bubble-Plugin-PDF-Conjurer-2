@@ -1,0 +1,54 @@
+{
+    "category": "plugins",
+    "display": "End multi-column on PDF",
+    "fields": {
+        "AKa": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AKb": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AKc": {
+            "caption": "Multi column name",
+            "doc": "This won't be shown in the pdf. Type in the multi column that you want to end here. Note that inserted elements must be between the Start and End actions. ",
+            "editor": "DynamicValue",
+            "name": "multi_column_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AKd": {
+            "caption": "Being repeated",
+            "default_val": false,
+            "doc": "If this column is being repeated inside a repeating structure, use \"yes\".",
+            "editor": "DynamicValue",
+            "name": "being_repeated",
+            "rank": 3,
+            "value": "boolean"
+        },
+        "AKe": {
+            "caption": "Repeating structure name",
+            "doc": "The name of the repeating structure this multi column is going to be repeated into.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AGa": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

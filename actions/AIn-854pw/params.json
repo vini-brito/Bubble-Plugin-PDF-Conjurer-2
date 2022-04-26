@@ -1,0 +1,51 @@
+{
+    "category": "plugins",
+    "display": "Conjure PDF",
+    "fields": {
+        "AIj": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AIk": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AIl": {
+            "caption": "File name",
+            "default_val": "Document",
+            "editor": "DynamicValue",
+            "name": "file_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AIm": {
+            "caption": "Set data header",
+            "default_val": true,
+            "doc": "Add the data header at the beginning of content (data:application/pdf;base64, ...)",
+            "editor": "Checkbox",
+            "name": "set_data_header",
+            "rank": 3
+        }
+    },
+    "return_value": {
+        "AEZ": {
+            "caption": "Content",
+            "name": "content",
+            "rank": 0,
+            "value": "text"
+        },
+        "AEb": {
+            "caption": "File name",
+            "name": "file_name",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

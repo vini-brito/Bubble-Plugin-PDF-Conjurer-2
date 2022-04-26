@@ -1,0 +1,43 @@
+{
+    "category": "plugins",
+    "display": "Start repeated table on PDF",
+    "fields": {
+        "AMm": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0,
+            "value": "text"
+        },
+        "AMn": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AMo": {
+            "caption": "Attention: This advanced action is only to be used inside a \"Repeated structure\".",
+            "editor": "Label",
+            "name": "action_info",
+            "rank": 2
+        },
+        "AMp": {
+            "caption": "Table name",
+            "doc": "Unique table name so you can add columns to it and end it.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 3,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AIM": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

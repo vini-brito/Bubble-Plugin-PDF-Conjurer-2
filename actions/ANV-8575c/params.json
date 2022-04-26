@@ -1,0 +1,36 @@
+{
+    "category": "plugins",
+    "display": "Start advanced table on PDF",
+    "fields": {
+        "ANS": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "ANT": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "ANU": {
+            "caption": "Table name",
+            "doc": "A unique name for this table, you will need to type it again in the other workflow actions related to this table. Just a single word will do, avoid spaces and funny characters.",
+            "editor": "DynamicValue",
+            "name": "table_name",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AJH": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

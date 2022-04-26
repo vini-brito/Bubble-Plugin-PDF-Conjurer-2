@@ -1,0 +1,69 @@
+{
+    "category": "plugins",
+    "display": "Load font to PDF",
+    "fields": {
+        "AJP": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AJQ": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AJR": {
+            "caption": "Font name",
+            "editor": "DynamicValue",
+            "name": "font_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AJS": {
+            "caption": "Regular",
+            "editor": "DynamicValue",
+            "name": "normal",
+            "rank": 3,
+            "value": "file"
+        },
+        "AJT": {
+            "caption": "Italics",
+            "editor": "DynamicValue",
+            "name": "italics",
+            "rank": 5,
+            "value": "file"
+        },
+        "AJU": {
+            "caption": "Bold",
+            "editor": "DynamicValue",
+            "name": "bold",
+            "rank": 4,
+            "value": "file"
+        },
+        "AJV": {
+            "caption": "Bolditalics",
+            "editor": "DynamicValue",
+            "name": "bolditalics",
+            "rank": 6,
+            "value": "file"
+        },
+        "AJW": {
+            "caption": "Insert your font files in TrueType extension (.ttf)",
+            "editor": "Label",
+            "name": "font_info",
+            "rank": 7
+        }
+    },
+    "return_value": {
+        "AEx": {
+            "caption": "Configurations",
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

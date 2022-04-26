@@ -15,10 +15,14 @@
         "AGQ": {
             "name": "font168",
             "url": "//dd7tel2830j4w.cloudfront.net/f1606176535181x843075191964970400/vfs_fonts.min.js"
+        },
+        "AOd": {
+            "name": "BBCode Parser",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1634677623477x612247379813284000/BBCodeParser.js"
         }
     },
     "dependencies": {
-        "plugin_api_version": "0",
+        "plugin_api_version": "1",
         "use_jquery": false
     }
 }

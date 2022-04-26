@@ -54,35 +54,35 @@
             "caption": "Page number margins",
             "editor": "Label",
             "name": "page_number_margins",
-            "rank": 8
+            "rank": 10
         },
         "AFO": {
             "caption": "Left margin",
             "default_val": 0,
             "editor": "StaticNumber",
             "name": "left_margin",
-            "rank": 9
+            "rank": 11
         },
         "AFP": {
             "caption": "Top margin",
             "default_val": 0,
             "editor": "StaticNumber",
             "name": "top_margin",
-            "rank": 10
+            "rank": 12
         },
         "AFQ": {
             "caption": "Right margin",
             "default_val": 0,
             "editor": "StaticNumber",
             "name": "right_margin",
-            "rank": 11
+            "rank": 13
         },
         "AFR": {
             "caption": "Bottom margin",
             "default_val": 0,
             "editor": "StaticNumber",
             "name": "bottom_margin",
-            "rank": 12
+            "rank": 14
         },
         "AFe": {
             "caption": "Hide footer elements on specific pages?",
@@ -99,6 +99,24 @@
             "name": "exclude_elements_pages",
             "optional": true,
             "rank": 7
+        },
+        "AOe": {
+            "caption": "Show total page count",
+            "default_val": false,
+            "doc": "Change this to \"yes\" if you want to display something like \"1/9\" or \"1 of 9\" or even translated like \"1 de 9\" or any other symbol or word you specify in the field below.",
+            "editor": "DynamicValue",
+            "name": "show_total_page_count",
+            "rank": 8,
+            "value": "boolean"
+        },
+        "AOf": {
+            "caption": "Counter divider",
+            "doc": "This is what will stay between the current page count and total page count in case you marked the field above with \"yes\". You can write anything, for example if you want \"1/9\", you can just write a / here. If you want them to be spaced, like \"1 / 9\", then write a spacebar, /, then spacebar again. Same goes for words, write \" of \" with spaces if you want it to be \"1 of 9\", if you forget the spaces, it will be \"1of9\" in the PDF and I think this is not what you are interested in.",
+            "editor": "DynamicValue",
+            "name": "current_and_total_page_divider",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
         }
     }
 }

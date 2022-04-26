@@ -1,0 +1,45 @@
+{
+    "category": "plugins",
+    "display": "Start repeating structure on PDF",
+    "fields": {
+        "AMd": {
+            "caption": "Insert the previous PDF Conjurer Server-side step result",
+            "editor": "Label",
+            "name": "config_info",
+            "rank": 0
+        },
+        "AMe": {
+            "caption": "Previous step result",
+            "editor": "DynamicValue",
+            "name": "prev_configs",
+            "rank": 1,
+            "value": "text"
+        },
+        "AMf": {
+            "caption": "Name",
+            "doc": "Unique name of this repeating structure, so you can write this name in the element to specify where it will be inserted.",
+            "editor": "DynamicValue",
+            "name": "repeating_structure_name",
+            "rank": 2,
+            "value": "text"
+        },
+        "AMg": {
+            "caption": "How many structures",
+            "doc": "How many repeated structures you want. For example if you're working with a list of users, use \"List of User's:count\" to run over the list once for each item. Optionally, you can specify a number by typing it or getting it somehow else, like \"5\" and the structure will be repeated 5 times.",
+            "editor": "DynamicValue",
+            "name": "iterations_count",
+            "rank": 3,
+            "value": "number"
+        }
+    },
+    "return_value": {
+        "AHx": {
+            "caption": "Configurations",
+            "is_list": false,
+            "name": "configurations",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}
