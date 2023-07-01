@@ -22,9 +22,11 @@ function(properties, context) {
         
         return '#' + convertedColor.join('');
     }
+
+    const hexColor = color.startsWith("#") ? color : convertRGBAtoHEX(color);
     
     configs.docDefinition.styles[style_name] = { 
-        color: convertRGBAtoHEX(color), 
+        color: hexColor, 
         fontSize, 
         bold, 
         italics, 
