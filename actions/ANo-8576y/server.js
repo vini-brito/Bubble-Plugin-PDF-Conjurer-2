@@ -31,7 +31,7 @@ function(properties, context) {
         
         const fonts = { ...configs.defaultFonts, ...configs.addedFonts };
         
-        const parserURL = 'https://dd7tel2830j4w.cloudfront.net/f1634677623477x612247379813284000/BBCodeParser.js';
+        const parserURL = 'https://meta-l.cdn.bubble.io/f1688082896800x500622453357242560/bbcodeparser_fixedcode_v5_SS.js';
         
         const parser = context.async((callback) => {
         fetch(parserURL)

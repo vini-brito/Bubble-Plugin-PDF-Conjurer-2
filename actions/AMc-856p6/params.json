@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Add table on PDF",
+    "display": "PDF Conjurer (backend) | Add table on PDF",
     "fields": {
         "AKg": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",
@@ -56,7 +56,7 @@
             "doc": "Choose a style and see if it pleases you!",
             "editor": "Dropdown",
             "name": "table_layout",
-            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra,Light Horizontal Lines Without Header",
             "rank": 6
         },
         "AKn": {
@@ -432,11 +432,12 @@
         },
         "ALj": {
             "caption": "This Column's Width",
+            "default_val": "Fit available space",
             "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
             "editor": "Dropdown",
             "name": "multi_column_width",
             "optional": true,
-            "options": "Fit available space,Fit content",
+            "options": "Fit available space,Fit content,Fixed width",
             "rank": 96
         },
         "ALk": {
@@ -445,7 +446,7 @@
             "editor": "DynamicValue",
             "name": "multi_column_name",
             "optional": true,
-            "rank": 97,
+            "rank": 98,
             "value": "text"
         },
         "ALl": {
@@ -454,7 +455,7 @@
             "doc": "Mark this box if this element is to be inserted into the header.Mark this box if this element is to be inserted into the header.",
             "editor": "Checkbox",
             "name": "into_header",
-            "rank": 98
+            "rank": 99
         },
         "ALm": {
             "caption": "Is this element being put into the footer?",
@@ -462,7 +463,7 @@
             "doc": "Mark this box if this element is to be inserted into the footer.",
             "editor": "Checkbox",
             "name": "into_footer",
-            "rank": 99
+            "rank": 100
         },
         "ALn": {
             "caption": "Is this element being put into the background?",
@@ -470,7 +471,7 @@
             "doc": "Mark this box if this element is to be inserted into the background.",
             "editor": "Checkbox",
             "name": "into_background",
-            "rank": 100
+            "rank": 101
         },
         "ALo": {
             "caption": "Use eleventh column?",
@@ -785,11 +786,20 @@
         "AOQ": {
             "caption": "Parse BBCode?",
             "default_val": false,
-            "doc": "What to parse the BBCode?",
+            "doc": "If \"Yes\", it will interpret [b]hello[/b] as a bold hello. Search the web to understand what BBCode is. Official is: https://www.bbcode.org/ To help, BBCode is what is outputted by rich text editors.  All standard BBCode tags are supported, except for the video tag. At the site above you will be able to see what are the standard tags.  The style defined in BBCode will override the style defined in the \"Define new style for\" action.  Non-standard tags that are outputted by Bubble's rich text editors are supported as well. The legacy rich text editor from Bubble will work fine. A new one from Bubble uses a different line break scheme, this means line breaks will sometimes disappear, in other words, some \"new line\"s will be \"skipped\" or \"eaten\". This new line problem will not affect the table itself, it will only affect the text content inside the cell.",
             "editor": "DynamicValue",
             "name": "parse_bbcode",
             "rank": 14,
             "value": "boolean"
+        },
+        "APC": {
+            "caption": "Fixed width size",
+            "doc": "If you select \"Fixed width\" in the dropdown above then you must specify a number here. Play with numbers to check the size, but know that the size here is in \"points\" not \"pixels\". You can search the web to know more about that unit of measure.",
+            "editor": "DynamicValue",
+            "name": "fixed_width_column_size",
+            "optional": true,
+            "rank": 97,
+            "value": "number"
         }
     },
     "return_value": {

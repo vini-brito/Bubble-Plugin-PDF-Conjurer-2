@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Start repeating structure on PDF",
+    "display": "PDF Conjurer (backend) | Start repeating structure on PDF",
     "fields": {
         "AMd": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",

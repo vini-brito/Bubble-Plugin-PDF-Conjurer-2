@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Activate header on PDF",
+    "display": "PDF Conjurer (backend) | Activate header on PDF",
     "fields": {
         "AJi": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",

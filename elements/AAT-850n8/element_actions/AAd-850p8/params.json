@@ -52,6 +52,48 @@
             "name": "font_name",
             "rank": 6,
             "value": "text"
+        },
+        "AOs": {
+            "caption": "Line height",
+            "default_val": 1,
+            "doc": "The space between one line and the line immediately below it. Default is 1, which is the normal space.",
+            "editor": "DynamicValue",
+            "name": "line_height",
+            "rank": 7,
+            "value": "number"
+        },
+        "APP": {
+            "caption": "Margin left",
+            "default_val": 0,
+            "doc": "A margin to be applied directly to the text. Useful if you want to add a padding inside table cells. Technically it is a margin, but it will look like table cell padding.",
+            "editor": "DynamicValue",
+            "name": "margin_left",
+            "rank": 8,
+            "value": "number"
+        },
+        "APQ": {
+            "caption": "Margin top",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_top",
+            "rank": 9,
+            "value": "number"
+        },
+        "APR": {
+            "caption": "Margin right",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_right",
+            "rank": 10,
+            "value": "number"
+        },
+        "APS": {
+            "caption": "Margin bottom",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_bottom",
+            "rank": 11,
+            "value": "number"
         }
     }
 }

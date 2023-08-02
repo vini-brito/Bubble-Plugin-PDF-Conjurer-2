@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Add text on PDF",
+    "display": "PDF Conjurer (backend) | Add text on PDF",
     "fields": {
         "AIN": {
             "caption": "Previous step result",
@@ -12,6 +12,7 @@
         },
         "AIO": {
             "caption": "Text",
+            "doc": "Insert some text in the document. Pro bubbler tip: This is super useful to insert images and to achieve rich styling of texts, and also to use with infinitely nested data by using \":format as text\" operator on lists, check that operator out, there are videos, forum posts and more about it. Also, by infinitely nested I mean that you can use the operator again if you have a list as a field inside your initial list, as in list of stores, and each store has a list of products.",
             "editor": "DynamicValue",
             "long_text": true,
             "name": "text",
@@ -28,7 +29,7 @@
         "AIQ": {
             "caption": "Parse BBCode",
             "default_val": false,
-            "doc": "",
+            "doc": "If \"Yes\", it will interpret [b]hello[/b] as a bold hello. Search the web to understand what BBCode is. Official is: https://www.bbcode.org/ To help, BBCode is what is outputted by rich text editors.  All standard BBCode tags are supported, except for the video tag. At the site above you will be able to see what are the standard tags.  The style defined in BBCode will override the style defined in the \"Define new style for\" action.  Non-standard tags that are outputted by Bubble's rich text editors are supported as well. The legacy rich text editor from Bubble will work fine. A new one from Bubble uses a different line break scheme, this means line breaks will sometimes disappear, in other words, some \"new line\"s will be \"skipped\" or \"eaten\".",
             "editor": "DynamicValue",
             "name": "parse_bbcode",
             "rank": 3,
@@ -106,11 +107,12 @@
         },
         "AIa": {
             "caption": "This Column's Width",
+            "default_val": "Fit available space",
             "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
             "editor": "Dropdown",
             "name": "column_width",
             "optional": true,
-            "options": "Fit available space,Fit content",
+            "options": "Fit available space,Fit content,Fixed width",
             "rank": 13
         },
         "AIb": {
@@ -119,7 +121,7 @@
             "doc": "Mark this box if this element is to be inserted into the footer.",
             "editor": "Checkbox",
             "name": "into_footer",
-            "rank": 16
+            "rank": 17
         },
         "AIc": {
             "caption": "Is this element being put into the header?",
@@ -127,7 +129,7 @@
             "doc": "Mark this box if this element is to be inserted into the header.",
             "editor": "Checkbox",
             "name": "into_header",
-            "rank": 15
+            "rank": 16
         },
         "AId": {
             "caption": "Multi column name",
@@ -135,7 +137,7 @@
             "editor": "DynamicValue",
             "name": "multi_column_name",
             "optional": true,
-            "rank": 14,
+            "rank": 15,
             "value": "text"
         },
         "AIe": {
@@ -144,20 +146,20 @@
             "doc": "Mark this box if this element is to be inserted into the background.",
             "editor": "Checkbox",
             "name": "into_background",
-            "rank": 17
+            "rank": 18
         },
         "AIf": {
             "caption": "Repeating structure auxiliary fields. Only use the fields below if this element is being inserted into a repeating structure",
             "editor": "Label",
             "name": "repeating_structure_auxiliary_fields",
-            "rank": 18
+            "rank": 19
         },
         "AIg": {
             "caption": "Structure name",
             "editor": "DynamicValue",
             "name": "repeating_structure_name",
             "optional": true,
-            "rank": 19,
+            "rank": 20,
             "value": "text"
         },
         "AIh": {
@@ -167,8 +169,17 @@
             "is_list": true,
             "name": "text_list",
             "optional": true,
-            "rank": 20,
+            "rank": 21,
             "value": "text"
+        },
+        "APB": {
+            "caption": "Fixed width size",
+            "doc": "If you select \"Fixed width\" in the dropdown above then you must specify a number here. Play with numbers to check the size, but know that the size here is in \"points\" not \"pixels\". You can search the web to know more about that unit of measure.",
+            "editor": "DynamicValue",
+            "name": "fixed_width_column_size",
+            "optional": true,
+            "rank": 14,
+            "value": "number"
         }
     },
     "return_value": {

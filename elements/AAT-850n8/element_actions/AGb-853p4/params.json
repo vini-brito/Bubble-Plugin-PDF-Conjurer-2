@@ -83,7 +83,7 @@
             "doc": "Choose one and see (: ",
             "editor": "Dropdown",
             "name": "table_layout",
-            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra,Light Horizontal Lines Without Header",
             "rank": 9
         },
         "AGx": {

@@ -48,7 +48,7 @@
             "doc": "Choose a style and see if it pleases you!",
             "editor": "Dropdown",
             "name": "table_layout",
-            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra,Light Horizontal Lines Without Header",
             "rank": 1
         },
         "AHQ": {
@@ -83,7 +83,7 @@
             "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
             "editor": "Dropdown",
             "name": "this_column_width",
-            "options": "Fit available space,Fit content",
+            "options": "Fit available space,Fit content,Fixed width",
             "rank": 10,
             "value": "text"
         },
@@ -93,7 +93,7 @@
             "doc": "Use \"yes\" if this element is to be inserted into the footer.",
             "editor": "DynamicValue",
             "name": "into_footer",
-            "rank": 11,
+            "rank": 12,
             "value": "boolean"
         },
         "AHV": {
@@ -102,7 +102,7 @@
             "doc": "Use \"yes\" if this element is to be inserted into the header.",
             "editor": "DynamicValue",
             "name": "into_header",
-            "rank": 12,
+            "rank": 13,
             "value": "boolean"
         },
         "AHW": {
@@ -111,7 +111,7 @@
             "doc": "Use \"yes\" if this element is to be inserted into the background.",
             "editor": "DynamicValue",
             "name": "into_background",
-            "rank": 13,
+            "rank": 14,
             "value": "boolean"
         },
         "AHX": {
@@ -122,6 +122,15 @@
             "optional": true,
             "rank": 9,
             "value": "text"
+        },
+        "AOz": {
+            "caption": "Fixed width size",
+            "doc": "If you select \"Fixed width\" in the dropdown above then you must specify a number here. Play with numbers to check the size, but know that the size here is in \"points\" not \"pixels\". You can search the web to know more about that unit of measure.",
+            "editor": "DynamicValue",
+            "name": "fixed_width_column_size",
+            "optional": true,
+            "rank": 11,
+            "value": "number"
         }
     }
 }

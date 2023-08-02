@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Start multi-column on PDF",
+    "display": "PDF Conjurer (backend) | Start multi-column on PDF",
     "fields": {
         "AKS": {
             "caption": "Multi Column Name",

@@ -245,82 +245,124 @@ function(instance, properties, context) {
 
 
 	// now we push the acquired array(s) inside the "body:" main array to create a row with each array (to later be transposed into a column)
-	tableBody.push(instance.data.listOfExtractedValuesFirstColumn);
+	//tableBody.push(instance.data.listOfExtractedValuesFirstColumn);
+	// change the above code so the text becomes a pdfmake text object with a style property
+	tableBody.push(instance.data.listOfExtractedValuesFirstColumn.map((singleText) => {
+		return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+	}));
 
 	if (properties.use_second_column) {
-		tableBody.push(instance.data.listOfExtractedValuesSecondColumn);
+		tableBody.push(instance.data.listOfExtractedValuesSecondColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_third_column) {
-		tableBody.push(instance.data.listOfExtractedValuesThirdColumn);
+		tableBody.push(instance.data.listOfExtractedValuesThirdColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_fourth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesFourthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesFourthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_fifth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesFifthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesFifthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_sixth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesSixthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesSixthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_seventh_column) {
-		tableBody.push(instance.data.listOfExtractedValuesSeventhColumn);
+		tableBody.push(instance.data.listOfExtractedValuesSeventhColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_eighth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesEighthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesEighthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_ninth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesNinthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesNinthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_tenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesTenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesTenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_eleventh_column) {
-		tableBody.push(instance.data.listOfExtractedValuesEleventhColumn);
+		tableBody.push(instance.data.listOfExtractedValuesEleventhColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_twelfth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesTwelfthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesTwelfthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_thirteenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesThirteenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesThirteenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_fourteenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesFourteenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesFourteenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_fifteenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesFifteenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesFifteenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_sixteenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesSixteenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesSixteenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_seventeenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesSeventeenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesSeventeenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_eighteenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesEighteenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesEighteenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_nineteenth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesNineteenthColumn);
+		tableBody.push(instance.data.listOfExtractedValuesNineteenthColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	if (properties.use_twentieth_column) {
-		tableBody.push(instance.data.listOfExtractedValuesTwentiethColumn);
+		tableBody.push(instance.data.listOfExtractedValuesTwentiethColumn.map((singleText) => {
+			return { text: singleText, style: `${definedStyleForTable.toLowerCase()}` }
+		}));
 	}
 
 	// here we fill in blank elements to the table so it becomes a square matrix and doesn't crashes (pdfmake only likes square matrices!)
@@ -611,7 +653,28 @@ function(instance, properties, context) {
 					return (i % 2 === 0) ? '#CCCCCC' : null;
 				}
 			}
+		} else if (chosenLayout === "Light Horizontal Lines Without Header") {
+
+			return {
+				hLineWidth(i, node) {
+					return (i === node.table.headerRows) ? 0 : 1; // Set the header row to 2, others to 1
+				},
+				vLineWidth(i) {
+					return 0; // No vertical lines
+				},
+				hLineColor(i) {
+					return '#aaa'; // Customize the color of horizontal lines
+				},
+				paddingLeft(i) {
+					return i === 0 ? 0 : 8; // Add padding to the left of the content cells
+				},
+				paddingRight(i, node) {
+					return (i === node.table.widths.length - 1) ? 0 : 8; // Add padding to the right of the content cells
+				}
+			}
+
 		}
+
 		else {
 			return "no layout specified"
 		}
@@ -623,31 +686,12 @@ function(instance, properties, context) {
 	let tableObjectHolder = {
 		table: {
 			headerRows: useHeaderRow,
-            dontBreakRows: true,
+			dontBreakRows: true,
 			keepWithHeaderRows: useHeaderRow,
 			widths: arrayOfWidths,
-			body: properties.parse_bbcode 
-            	? tableBody.map((line) => line.map((obj) => {
-                    const { text, style: lineStyle } = obj;
-                    
-                    const targetString = text || obj;
-                    const style = lineStyle || '';
-                    
-                    const parser = getParser(
-            			pdfMake.fonts, 
-            			(imageName, link) => {
-                			instance.data.docDefinition.images[imageName] = link;
-            			}, 
-            			(err) => {
-                			context.reportDebugger(err.message);
-            			}
-        			);
-                    
-                    return { stack: parser.getParsedText(targetString), style };
-                })) 
-                : tableBody,
+			body: tableBody,
 		},
-		style: `${definedStyleForTable.toLowerCase()}`,
+		//style: `${definedStyleForTable.toLowerCase()}`, was applying margins to table itself! 
 		margin: tableCustomMarginsDefinitionLogic(),
 		layout: layoutHolder,
 		pageBreak: properties.page_break.toLowerCase(),
@@ -657,11 +701,30 @@ function(instance, properties, context) {
 
 	if (properties.into_multi_column === true) {
 
+		/* 		if (properties.this_column_width === "Fit available space") {
+					tableObjectHolder.width = "*";
+				} else {
+					tableObjectHolder.width = "auto";
+				} */
+
+
 		if (properties.this_column_width === "Fit available space") {
+
 			tableObjectHolder.width = "*";
-		} else {
+
+		} else if (properties.this_column_width === "Fit content") {
+
 			tableObjectHolder.width = "auto";
+
+		} else if (properties.this_column_width === "Fixed width") {
+
+			tableObjectHolder.width = properties.fixed_width_column_size;
+
 		}
+
+
+
+
 
 		// pushing into the multi column
 		instance.data.multiColumnObjectHolder[`${properties.multi_column_name}`].columns.push(tableObjectHolder);

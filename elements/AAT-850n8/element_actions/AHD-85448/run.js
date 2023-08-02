@@ -32,7 +32,27 @@ function(instance, properties, context) {
                     return (i % 2 === 0) ? '#CCCCCC' : null;
                 }
             }
-        }
+        } else if (chosenLayout === "Light Horizontal Lines Without Header") {
+
+			return {
+				hLineWidth(i, node) {
+					return (i === node.table.headerRows) ? 0 : 1; // Set the header row to 2, others to 1
+				},
+				vLineWidth(i) {
+					return 0; // No vertical lines
+				},
+				hLineColor(i) {
+					return '#aaa'; // Customize the color of horizontal lines
+				},
+				paddingLeft(i) {
+					return i === 0 ? 0 : 8; // Add padding to the left of the content cells
+				},
+				paddingRight(i, node) {
+					return (i === node.table.widths.length - 1) ? 0 : 8; // Add padding to the right of the content cells
+				}
+			}
+
+		}
         else {
             return "no layout specified"
         }
@@ -139,7 +159,7 @@ function(instance, properties, context) {
 
     // first check if headers are all empty objects
 
-    const isBlankHeader = (element) => element.text === "" && element.style === "" ;
+    const isBlankHeader = (element) => element.text === "" && element.style === "";
 
     let areAllHeadersBlank = instance.data[`${properties.table_name}`].arrayOfHeaders.every(isBlankHeader);
 
@@ -171,37 +191,51 @@ function(instance, properties, context) {
 
     // here, in case this is being inputted into a multi column, will add the width of this element's column then push it into the specified column.
 
-	if (properties.into_multi_column === true) {
+    if (properties.into_multi_column === true) {
 
-		if (properties.this_column_width === "Fit available space") {
-			tableObjectHolder.width = "*";
-		} else {
-			tableObjectHolder.width = "auto";
-		}
+        /* 		if (properties.this_column_width === "Fit available space") {
+                    tableObjectHolder.width = "*";
+                } else {
+                    tableObjectHolder.width = "auto";
+                } */
 
-		// pushing into the multi column
-		instance.data.multiColumnObjectHolder[`${properties.multi_column_name}`].columns.push(tableObjectHolder);
+        if (properties.this_column_width === "Fit available space") {
 
-	} else if (properties.into_footer === true) {
+            tableObjectHolder.width = "*";
 
-		// here we push it into the footer
-		instance.data.footerObjectsHolder.columns.push(tableObjectHolder);
+        } else if (properties.this_column_width === "Fit content") {
 
-	} else if (properties.into_header === true) {
+            tableObjectHolder.width = "auto";
 
-		// here we push it into the header
-		instance.data.headerObjectsHolder.columns.push(tableObjectHolder);
+        } else if (properties.this_column_width === "Fixed width") {
 
-	} else if (properties.into_background === true) {
+            tableObjectHolder.width = properties.fixed_width_column_size;
 
-		// here we push it into the background
-		instance.data.docDefinition.background.push(tableObjectHolder);
+        }
 
-	} else {
-		// here we push the object into the main document body
+        // pushing into the multi column
+        instance.data.multiColumnObjectHolder[`${properties.multi_column_name}`].columns.push(tableObjectHolder);
 
-		instance.data.composeInMe.push(tableObjectHolder);
-	}
+    } else if (properties.into_footer === true) {
+
+        // here we push it into the footer
+        instance.data.footerObjectsHolder.columns.push(tableObjectHolder);
+
+    } else if (properties.into_header === true) {
+
+        // here we push it into the header
+        instance.data.headerObjectsHolder.columns.push(tableObjectHolder);
+
+    } else if (properties.into_background === true) {
+
+        // here we push it into the background
+        instance.data.docDefinition.background.push(tableObjectHolder);
+
+    } else {
+        // here we push the object into the main document body
+
+        instance.data.composeInMe.push(tableObjectHolder);
+    }
 
 
 

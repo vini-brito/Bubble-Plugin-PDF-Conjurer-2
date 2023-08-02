@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "End advanced table on PDF",
+    "display": "PDF Conjurer (backend) | End advanced table on PDF",
     "fields": {
         "ANp": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",
@@ -29,7 +29,7 @@
             "doc": "Choose a style and see if it pleases you!",
             "editor": "Dropdown",
             "name": "table_layout",
-            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra",
+            "options": "Standard,No Borders,Header Line Only,Light Horizontal Lines,Strong Outer Border,Zebra,Light Horizontal Lines Without Header",
             "rank": 3
         },
         "ANt": {
@@ -106,7 +106,7 @@
             "doc": "Fit content will make the column have the width of their content. Fit available space will extend the column's width to all horizontal avaliable space in the page.",
             "editor": "Dropdown",
             "name": "this_column_width",
-            "options": "Fit available space,Fit content",
+            "options": "Fit available space,Fit content,Fixed width",
             "rank": 12
         },
         "AOC": {
@@ -115,7 +115,7 @@
             "doc": "Use \"yes\" if this element is to be inserted into the header.",
             "editor": "DynamicValue",
             "name": "into_header",
-            "rank": 13,
+            "rank": 14,
             "value": "boolean"
         },
         "AOD": {
@@ -124,7 +124,7 @@
             "doc": "Use \"yes\" if this element is to be inserted into the footer.",
             "editor": "DynamicValue",
             "name": "into_footer",
-            "rank": 14,
+            "rank": 15,
             "value": "boolean"
         },
         "AOE": {
@@ -133,8 +133,17 @@
             "doc": "Use \"yes\" if this element is to be inserted into the background.",
             "editor": "DynamicValue",
             "name": "into_background",
-            "rank": 15,
+            "rank": 16,
             "value": "boolean"
+        },
+        "APA": {
+            "caption": "Fixed width size",
+            "doc": "If you select \"Fixed width\" in the dropdown above then you must specify a number here. Play with numbers to check the size, but know that the size here is in \"points\" not \"pixels\". You can search the web to know more about that unit of measure.",
+            "editor": "DynamicValue",
+            "name": "fixed_width_column_size",
+            "optional": true,
+            "rank": 13,
+            "value": "number"
         }
     },
     "return_value": {

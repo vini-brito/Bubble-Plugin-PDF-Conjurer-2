@@ -1,7 +1,7 @@
 function(properties, context) {
-  
+
   const fetch = require('node-fetch');
-    
+
   const {
     prev_configs,
     text,
@@ -21,6 +21,7 @@ function(properties, context) {
     into_background,
     repeating_structure_name,
     text_list,
+    fixed_width_column_size,
   } = properties;
 
   function hasTheKey(object, key) {
@@ -39,7 +40,31 @@ function(properties, context) {
 
   const willBeInsertedIntoColumn = into_multi_column || into_header || into_footer;
 
-  if (willBeInsertedIntoColumn) options.width = column_width === 'Fit available space' ? '*' : 'auto';
+
+
+
+  if (willBeInsertedIntoColumn) {
+
+
+    if (column_width === 'Fit available space') {
+
+      options.width = "*";
+
+    } else if (column_width === "Fit content") {
+
+      options.width = "auto";
+
+    } else if (column_width === "Fixed width") {
+
+      options.width = fixed_width_column_size;
+
+    }
+
+  }
+
+
+
+
 
   if (!text && !repeating_structure_name) {
     throw new Error("Please don't forget to insert a text");
@@ -48,31 +73,32 @@ function(properties, context) {
   let textObject = { text, ...options };
 
   if (parse_bbcode) {
-    const parserURL = 'https://dd7tel2830j4w.cloudfront.net/f1634677623477x612247379813284000/BBCodeParser.js';
-      
+    const parserURL = 'https://meta-l.cdn.bubble.io/f1687362558951x515863457607741440/bbcodeparser_fixedcode_v4_table.js';
+
     const parser = context.async((callback) => {
       fetch(parserURL)
         .then((response) => response.text())
         .then((file) => {
           eval(file);
-          	
+
           callback(null, getParser(
-            fonts, 
+            fonts,
             (imageName, link) => {
               configs.addedImages[imageName] = link;
-            }, 
+            },
             (err) => {
               console.error(err);
-            }, 
-            'code', 
-            'quote'
+            },
+            'code',
+            'quote',
+            'table'
           ));
-      	})
+        })
         .catch((err) => {
           callback(err, null);
         });
     });
-      
+
     const stack = parser.getParsedText(text);
 
     textObject = { stack, ...options };
@@ -143,5 +169,5 @@ function(properties, context) {
   }
 
   return { configurations: JSON.stringify(configs) };
-    
+
 }

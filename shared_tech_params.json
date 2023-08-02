@@ -19,6 +19,42 @@
         "AOd": {
             "name": "BBCode Parser",
             "url": "//dd7tel2830j4w.cloudfront.net/f1634677623477x612247379813284000/BBCodeParser.js"
+        },
+        "APD": {
+            "name": "bbcodeparserfork",
+            "url": "//meta.cdn.bubble.io/f1682033375050x229274712748744670/bbcodeparser_fork.js"
+        },
+        "APE": {
+            "name": "roboto medium",
+            "url": "//meta.cdn.bubble.io/f1682033615745x698119539522383600/Roboto-MediumItalic.ttf"
+        },
+        "APF": {
+            "name": "roboto italic",
+            "url": "//meta.cdn.bubble.io/f1682033628642x644034840708003200/Roboto-Italic.ttf"
+        },
+        "APG": {
+            "name": "robot medium real",
+            "url": "//meta.cdn.bubble.io/f1682033644709x561369182938340900/Roboto-Medium.ttf"
+        },
+        "APH": {
+            "name": "roboto regular",
+            "url": "//meta.cdn.bubble.io/f1682033658049x671550389614182500/Roboto-Regular.ttf"
+        },
+        "APJ": {
+            "name": "bbcode_parser_fixed_v2",
+            "url": "//meta.cdn.bubble.io/f1682118201827x516665925649553600/bbcodeparser_fixedcode_v2.js"
+        },
+        "APL": {
+            "name": "bbcode_tablefixed",
+            "url": "//meta-l.cdn.bubble.io/f1687312865587x552366479597132600/bbcodeparser_fixedcode_v3_table.js"
+        },
+        "APM": {
+            "name": "bbcode_v4",
+            "url": "//meta-l.cdn.bubble.io/f1687362558951x515863457607741440/bbcodeparser_fixedcode_v4_table.js"
+        },
+        "APN": {
+            "name": "bbcode SS fix",
+            "url": "//meta-l.cdn.bubble.io/f1688082896800x500622453357242560/bbcodeparser_fixedcode_v5_SS.js"
         }
     },
     "dependencies": {

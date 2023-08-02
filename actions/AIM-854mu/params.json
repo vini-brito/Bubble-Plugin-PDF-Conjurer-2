@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Initialize PDF document",
+    "display": "PDF Conjurer (backend) | Initialize PDF document",
     "fields": {
         "AIE": {
             "caption": "Page size",

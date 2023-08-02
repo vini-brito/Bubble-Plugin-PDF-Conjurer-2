@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "End repeating structure on PDF",
+    "display": "PDF Conjurer (backend) | End repeating structure on PDF",
     "fields": {
         "AMi": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",

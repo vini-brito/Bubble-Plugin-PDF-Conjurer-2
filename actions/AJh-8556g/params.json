@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Define new style to PDF",
+    "display": "PDF Conjurer (backend) | Define new style to PDF",
     "fields": {
         "AJY": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",
@@ -66,6 +66,48 @@
             "name": "font_name",
             "rank": 8,
             "value": "text"
+        },
+        "AOt": {
+            "caption": "Line height",
+            "default_val": 1,
+            "doc": "The space between one line and the line immediately below it. Default is 1, which is the normal space.",
+            "editor": "DynamicValue",
+            "name": "line_height",
+            "rank": 9,
+            "value": "number"
+        },
+        "APT": {
+            "caption": "Margin left",
+            "default_val": 0,
+            "doc": "Margin to be applied to the text itself. Useful if you want to add margins inside table cells. It will look like \"cell padding\".",
+            "editor": "DynamicValue",
+            "name": "margin_left",
+            "rank": 10,
+            "value": "number"
+        },
+        "APU": {
+            "caption": "Margin top",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_top",
+            "rank": 11,
+            "value": "number"
+        },
+        "APV": {
+            "caption": "Margin right",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_right",
+            "rank": 12,
+            "value": "number"
+        },
+        "APW": {
+            "caption": "Margin bottom",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "margin_bottom",
+            "rank": 13,
+            "value": "number"
         }
     },
     "return_value": {

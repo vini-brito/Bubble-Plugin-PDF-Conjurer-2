@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Start advanced table on PDF",
+    "display": "PDF Conjurer (backend) | Start advanced table on PDF",
     "fields": {
         "ANS": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",

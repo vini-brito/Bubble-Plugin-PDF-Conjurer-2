@@ -23,6 +23,8 @@ function(instance, properties, context) {
 														   italics: properties.italics,
 														   alignment: properties.alignment,
 														   font: properties.font_name,
+														   lineHeight: properties.line_height,
+														   margin: [properties.margin_left, properties.margin_top, properties.margin_right, properties.margin_bottom]
 		
 													 }
 													 

@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Activate footer on PDF",
+    "display": "PDF Conjurer (backend) | Activate footer on PDF",
     "fields": {
         "AKA": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",
@@ -132,6 +132,15 @@
             "name": "margin_bottom",
             "rank": 16,
             "value": "number"
+        },
+        "AOv": {
+            "caption": "Counter style",
+            "doc": "The text style to be applied to the counter in the footer.",
+            "editor": "DynamicValue",
+            "name": "counter_style",
+            "optional": true,
+            "rank": 17,
+            "value": "text"
         }
     },
     "return_value": {

@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "End multi-column on PDF",
+    "display": "PDF Conjurer (backend) | End multi-column on PDF",
     "fields": {
         "AKa": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",

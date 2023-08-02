@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Add image on PDF",
+    "display": "PDF Conjurer (backend) | Add image on PDF",
     "fields": {
         "AIo": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",
@@ -164,7 +164,7 @@
             "editor": "Dropdown",
             "name": "alignment",
             "optional": true,
-            "options": "Left,Center,Rigth",
+            "options": "Left,Center,Right",
             "rank": 9
         },
         "AJK": {

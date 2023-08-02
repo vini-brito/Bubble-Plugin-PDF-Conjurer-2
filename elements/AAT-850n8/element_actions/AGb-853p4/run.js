@@ -32,7 +32,27 @@ function(instance, properties, context) {
                     return (i % 2 === 0) ? '#CCCCCC' : null;
                 }
             }
-        }
+        } else if (chosenLayout === "Light Horizontal Lines Without Header") {
+
+			return {
+				hLineWidth(i, node) {
+					return (i === node.table.headerRows) ? 0 : 1; // Set the header row to 2, others to 1
+				},
+				vLineWidth(i) {
+					return 0; // No vertical lines
+				},
+				hLineColor(i) {
+					return '#aaa'; // Customize the color of horizontal lines
+				},
+				paddingLeft(i) {
+					return i === 0 ? 0 : 8; // Add padding to the left of the content cells
+				},
+				paddingRight(i, node) {
+					return (i === node.table.widths.length - 1) ? 0 : 8; // Add padding to the right of the content cells
+				}
+			}
+
+		}
         else {
             return "no layout specified"
         }
@@ -116,7 +136,7 @@ function(instance, properties, context) {
 
         return t;
     }
-
+    // remove this when text style becomes defined at individual column
     if (typeof properties.tableStyle !== "undefined" && properties.tableStyle !== null) {
 
         var definedStyleForTable = properties.tableStyle.replaceAll(/\W/g, ''); // small regex to remove any undesirable characters from style name inputed by app maker

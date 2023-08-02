@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Upload PDF",
+    "display": "PDF Conjurer (backend) | Upload PDF",
     "fields": {
         "AHx": {
             "caption": "Upload file URL",
@@ -44,7 +44,7 @@
             "value": "text"
         },
         "AIC": {
-            "caption": "In order to upload the PDF file, you need to create a backend workflow that receive a file input! From this workflow returns the file URL and other informations that you want",
+            "caption": "In order to upload the PDF file, you need to create a backend workflow that receive a file input! From this workflow return the file URL and other information that you want",
             "editor": "Label",
             "name": "upload_info",
             "rank": 0
@@ -60,12 +60,12 @@
         },
         "AOo": {
             "caption": "Attach this file to",
-            "doc": "If you want to make a private file, set the user that the file will be attached",
+            "doc": "If you want to make a private file, set the thing that the file will be attached",
             "editor": "DynamicValue",
             "name": "attach_to",
             "optional": true,
             "rank": 7,
-            "value": "user"
+            "value": "_any_thing_bindable"
         }
     },
     "return_value": {

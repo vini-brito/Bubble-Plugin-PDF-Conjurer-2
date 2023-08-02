@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Load font to PDF",
+    "display": "PDF Conjurer (backend) | Load font to PDF",
     "fields": {
         "AJP": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",

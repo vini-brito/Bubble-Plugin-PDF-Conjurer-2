@@ -1,6 +1,6 @@
 {
     "category": "plugins",
-    "display": "Conjure PDF",
+    "display": "PDF Conjurer (backend) | Conjure PDF",
     "fields": {
         "AIj": {
             "caption": "Insert the previous PDF Conjurer Server-side step result",
